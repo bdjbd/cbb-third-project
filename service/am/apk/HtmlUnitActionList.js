@@ -1,0 +1,105 @@
+var data={list:[
+	{
+		name:"test-home"
+		,url:"/apk/test_home.js"
+		,param : {
+			ItemName : "_item"
+			,SQL : "select * from WS_COMMODITY where COMDYTYPE=1 and parent_id='1'  order by recommend"
+		}
+	}
+	,{
+		name:"test-help"
+		,url:"/apk/test_help.js"
+		,param : {name1 : "1"}
+	}
+	,{
+		name:"am.plugins.content.ContentList"
+		,url:"/am_mobile_action/am/plugins/content/ContentList.js"
+		,param : {menuType : "content"}
+	}
+	
+	,{
+		name:"am.plugins.menu.ADUnit"
+		,url:"/am_mobile_action/am/plugins/menu/ADUnit.js"
+		,param : {menuType : "content"}
+	}
+	,{
+		name:"am.plugins.web.HeaderSearchUnit"
+		,url:"/am_mobile_action/am/plugins/web/HeaderSearchUnit.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.CommonHeaderUnit"
+		,url:"/am_mobile_action/am/plugins/web/CommonHeaderUnit.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.CommonFooterUnit"
+		,url:"/am_mobile_action/am/plugins/web/CommonFooterUnit.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.menu.LeftNavigatUnit"
+		,url:"/am_mobile_action/am/plugins/menu/LeftNavigatUnit.js"
+		,param:{upid:"d102f7e0-71c3-4269-bb78-8706bfb8a1ec"}
+	}
+	,{
+		name:"am.plugins.web.ButtonUnit"
+		,url:"/am_mobile_action/am/plugins/web/ButtonUnit.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.collectionUnit"
+		,url:"/am_mobile_action/am/plugins/web/collectionUnit.js"
+		,param:{differentPage:"mall"}
+	}
+	,{
+		name:"am.plugins.web.MallActivitiesUnit"
+		,url:"/am_mobile_action/am/plugins/web/MallActivitiesUnit.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.GeneralStoreUnit"
+		,url:"/am_mobile_action/am/plugins/web/GeneralStoreUnit.js"
+		,param:{}
+	}
+	,{	name:"am.plugins.web.mall.PageToAnother"
+		,url:"/am_mobile_action/am/plugins/web/mall/PageToAnother.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.HeadIMagUnit"
+		,url:"/am_mobile_action/am/plugins/web/HeadIMagUnit.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.ActivityMallListUnit"
+		,url:"/am_mobile_action/am/plugins/web/ActivityMallListUnit.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.MallShoppingCarUnit"
+		,url:"/am_mobile_action/am/plugins/web/MallShoppingCarUnit.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.AbuotSideLeftUnit"
+		,url:"/am_mobile_action/am/plugins/web/AbuotSideLeftUnit.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.ContentDetailsUnit"
+		,url:"/am_mobile_action/am/plugins/web/ContentDetailsUnit.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.CommodityGroupSale"
+		,url:"/am_mobile_action/am/plugins/web/CommodityGroupSale.js"
+		,param:{}
+	}
+	,{
+		name:"am.plugins.web.mall.MallGoodListUnit"
+		,url:"/am_mobile_action/am/plugins/web/mall/MallGoodListUnit.js"
+		,param:{}
+	}
+]};
