@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="T">
+  <columns>
+    <column name="t" type="2"/>
+    <column name="tl" type="2"/>
+    <column name="gid" type="2"/>
+    <column name="vc" type="2"/>
+    <column name="o" type="12"/>
+    <column name="l" type="12"/>
+    <column name="ler" type="2"/>
+    <column name="lc" type="2"/>
+    <column name="lct" type="33"/>
+    <column name="lm" type="2"/>
+    <column name="lmt" type="33"/>
+    <column name="lr" type="2"/>
+    <column name="viu" type="2"/>
+    <column name="vit" type="33"/>
+    <column name="vir" type="2"/>
+    <column name="s" type="2"/>
+    <column name="lt" type="2"/>
+    <column name="v0" type="2"/>
+    <column name="v1" type="2"/>
+    <column name="v2" type="2"/>
+    <column name="v3" type="2"/>
+    <column name="v4" type="2"/>
+    <column name="v5" type="2"/>
+    <column name="v6" type="2"/>
+    <column name="v7" type="2"/>
+    <column name="v8" type="2"/>
+    <column name="v9" type="2"/>
+    <column name="i1" type="12"/>
+    <column name="i2" type="12"/>
+    <column name="i3" type="12"/>
+    <column name="i4" type="12"/>
+    <column name="i5" type="12"/>
+  </columns>
+  <rows>
+    <row>
+      <value>ABDP_CHILDADMINROLESET</value>
+      <value>下级管理员可用角色设置表</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value></value>
+      <value>superadmin</value>
+      <value>2018-05-09 09:56:06</value>
+      <value>superadmin</value>
+      <value>2018-05-09 09:56:06</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+  </rows>
+</table>

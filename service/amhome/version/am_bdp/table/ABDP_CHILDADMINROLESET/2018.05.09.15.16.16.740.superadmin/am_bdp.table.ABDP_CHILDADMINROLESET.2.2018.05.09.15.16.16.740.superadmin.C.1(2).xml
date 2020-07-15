@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="C">
+  <columns>
+    <column name="c" type="2"/>
+    <column name="t" type="2"/>
+    <column name="cl" type="2"/>
+    <column name="dt" type="12"/>
+    <column name="pk" type="12"/>
+    <column name="nn" type="12"/>
+    <column name="l" type="12"/>
+    <column name="s" type="12"/>
+    <column name="g" type="2"/>
+    <column name="gr" type="12"/>
+    <column name="v" type="12"/>
+    <column name="o" type="12"/>
+    <column name="d" type="2"/>
+    <column name="uk" type="12"/>
+    <column name="f" type="2"/>
+    <column name="e" type="12"/>
+    <column name="v1" type="2"/>
+    <column name="v2" type="2"/>
+    <column name="v3" type="2"/>
+    <column name="i1" type="12"/>
+    <column name="i2" type="12"/>
+  </columns>
+  <rows>
+    <row>
+      <value>roleid</value>
+      <value>ABDP_CHILDADMINROLESET</value>
+      <value>角色id</value>
+      <value>2</value>
+      <value>0</value>
+      <value>0</value>
+      <value>50</value>
+      <value>$N%</value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+    <row>
+      <value>id</value>
+      <value>ABDP_CHILDADMINROLESET</value>
+      <value>id</value>
+      <value>2</value>
+      <value>1</value>
+      <value>1</value>
+      <value>50</value>
+      <value>$N%</value>
+      <value>5</value>
+      <value>2</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+  </rows>
+</table>

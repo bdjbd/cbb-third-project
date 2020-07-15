@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>UploadiFive Test</title>
+
+<script src="jquery/jquery-1.11.1.js" type="text/javascript"></script>
+<script src="jquery.uploadify.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="uploadify.css">
+<style type="text/css">
+body {
+	font: 13px Arial, Helvetica, Sans-serif;
+}
+</style>
+</head>
+
+<body>
+	<h1>Uploadify Demo</h1>
+
+	<div id="fileQueue"></div>
+    <input type="file" name="uploadify" id="uploadify" />
+    <p>
+      <a href="javascript:$('#uploadify').uploadify('upload')">上传</a>| 
+      <a href="javascript:$('#uploadify').uploadify('cancel')">取消上传</a>
+    </p>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+        {
+            $("#uploadify").uploadify({
+                'uploader': 'uploadify.swf',
+                'uploader': '/am_upload',
+                'folder': 'uploads',
+                'queueID': 'fileQueue',
+				'buttonText': '选择文件',
+                'auto': true,
+                'multi': true,
+				'formData':{
+					'year':'2014',
+					'month':'10',
+					'day':'18',
+					'tag_name' : 'new_file_v01'
+				},
+				'onUploadSuccess': function (file, data, response) {
+                    $('#' + file.id).find('.data').html(' 上传完毕');
+				},
+				'onUploadComplete': function(file) {
+					console.log('The file ' + file.name + ' finished processing.');
+				}
+            });
+        });  
+	</script>
+</body>
+</html>

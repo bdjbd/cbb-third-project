@@ -1,0 +1,19 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;}body{line-height:1.5;}table{border-collapse:collapse;}caption,th,td{text-align:left;font-weight:400;}/*(ie6)table,*/td,th{vertical-align:middle;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}a img{border:none;}
+/**/
+table,iframe{width:100%;}
+/**/
+body{
+	background:#f1f1f1;
+}
+.H{display:none;}
+.H100{height:100%;}
+.TL{text-align:left;}
+.TR{text-align:right;}
+.TC{text-align:center;font-weight: bolder;}
+.VT{vertical-align:top;}
+.VM{vertical-align:middle;}
+.VB{vertical-align:bottom;}
+.LOADING{background:url('/common/images/loading/loading.gif') no-repeat scroll center center transparent}
+/* grid fixed */
+.GF{table-layout:fixed;}
+.GF td{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}

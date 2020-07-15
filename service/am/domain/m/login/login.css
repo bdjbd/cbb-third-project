@@ -1,0 +1,16 @@
+
+.CODE{cursor:pointer;vertical-align:top;margin-left:2px;}
+.ME{background:none;text-align:center;padding:0;margin:0;border:0;}
+.ME p {background:none;padding:0;clear:both;color:#993333;}
+
+body{background:#FAFBF4;margin:auto;padding-top:20px;}
+
+#logo {margin:0 auto;padding-top:20px;width:202px;}
+.page {border:1px solid #ADBC61;margin:20px auto 0 auto;width:202px;}
+#header {height:48px;padding:10px 20px;background:url(bar.gif) repeat-x scroll 0%;}
+#lock {float:left;margin-right:20px;}
+#header span{color:#4D4D4D;font-size:20pt;line-height:48px;}
+#content {background:#fff;margin:0;padding-bottom:20px;}
+#error {height:20px;padding-top:10px;}
+#footer {line-height:1.3em;margin:0 auto;width:202px;}
+#footer, #footer a {color:#aaa;font-size:9px;margin-top:3px;text-align:center;}

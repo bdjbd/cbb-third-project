@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="ELEMENT">
+  <columns>
+    <column name="eid" type="2"/>
+    <column name="uid" type="2"/>
+    <column name="c" type="12"/>
+    <column name="b" type="12"/>
+    <column name="s" type="12"/>
+    <column name="o" type="12"/>
+    <column name="r" type="2"/>
+    <column name="ms" type="12"/>
+    <column name="me" type="12"/>
+    <column name="ma" type="12"/>
+    <column name="a" type="12"/>
+    <column name="au" type="12"/>
+    <column name="aum" type="12"/>
+    <column name="vv" type="2"/>
+    <column name="ve" type="2"/>
+    <column name="vc" type="2"/>
+    <column name="vr" type="12"/>
+    <column name="vm" type="12"/>
+    <column name="n" type="2"/>
+    <column name="al" type="12"/>
+    <column name="l" type="2"/>
+    <column name="t" type="2"/>
+    <column name="d" type="2"/>
+    <column name="cu" type="2"/>
+    <column name="css" type="2"/>
+    <column name="v1" type="12"/>
+    <column name="v2" type="12"/>
+    <column name="v3" type="12"/>
+    <column name="w" type="12"/>
+    <column name="h" type="12"/>
+    <column name="qm" type="2"/>
+    <column name="wp" type="2"/>
+    <column name="ws" type="2"/>
+    <column name="wpt" type="12"/>
+    <column name="wpl" type="12"/>
+    <column name="wpb" type="12"/>
+    <column name="wpr" type="12"/>
+    <column name="ww" type="12"/>
+    <column name="wwm" type="12"/>
+    <column name="wh" type="12"/>
+    <column name="whm" type="12"/>
+    <column name="wc" type="2"/>
+    <column name="wcu" type="2"/>
+    <column name="g" type="2"/>
+    <column name="wrs" type="12"/>
+    <column name="wcs" type="12"/>
+    <column name="wa" type="12"/>
+    <column name="wv" type="12"/>
+    <column name="ls" type="12"/>
+    <column name="ata" type="12"/>
+    <column name="aa" type="2"/>
+    <column name="ap" type="2"/>
+    <column name="ai" type="2"/>
+    <column name="ad" type="2"/>
+    <column name="ac" type="2"/>
+    <column name="av" type="2"/>
+    <column name="c1" type="2"/>
+    <column name="i1" type="12"/>
+    <column name="arr" type="12"/>
+    <column name="ars" type="2"/>
+    <column name="asf" type="2"/>
+    <column name="aff" type="2"/>
+    <column name="asm" type="2"/>
+    <column name="afm" type="2"/>
+    <column name="v0" type="2"/>
+    <column name="v4" type="2"/>
+    <column name="v5" type="2"/>
+    <column name="c0" type="2"/>
+    <column name="c2" type="2"/>
+    <column name="c3" type="2"/>
+    <column name="c4" type="2"/>
+    <column name="c5" type="2"/>
+    <column name="c6" type="2"/>
+    <column name="c7" type="2"/>
+    <column name="c8" type="2"/>
+    <column name="c9" type="2"/>
+    <column name="i0" type="12"/>
+    <column name="i2" type="12"/>
+    <column name="i3" type="12"/>
+    <column name="i4" type="12"/>
+    <column name="i5" type="12"/>
+    <column name="i6" type="2"/>
+    <column name="i7" type="12"/>
+    <column name="i8" type="12"/>
+    <column name="i9" type="12"/>
+  </columns>
+  <rows>
+    <row>
+      <value>query</value>
+      <value>user.query</value>
+      <value>41</value>
+      <value>0</value>
+      <value>1</value>
+      <value>2</value>
+      <value></value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>1</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>$L{button.query}</value>
+      <value>1</value>
+      <value>/common/images/tool/query.png</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>com.fastunit.support.action.QueryAction</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>user.query</value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value>/am_bdp/user.do</value>
+      <value>/am_bdp/user.do</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>userid</value>
+      <value>user.query</value>
+      <value>1</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value></value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>$L{app:user.query.userid}</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>214</value>
+      <value>$N%</value>
+      <value>2</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>userlevel</value>
+      <value>user.query</value>
+      <value>3</value>
+      <value>1</value>
+      <value>1</value>
+      <value>6</value>
+      <value>app|userlevel</value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>1</value>
+      <value>7</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>$L{app:user.form.userlevel}</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>u2</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>219</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>s</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>username</value>
+      <value>user.query</value>
+      <value>1</value>
+      <value>1</value>
+      <value>1</value>
+      <value>2</value>
+      <value></value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>$L{app:user.query.username}</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>214</value>
+      <value>$N%</value>
+      <value>2</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>clear</value>
+      <value>user.query</value>
+      <value>41</value>
+      <value>0</value>
+      <value>1</value>
+      <value>0</value>
+      <value></value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>1</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>清空</value>
+      <value>1</value>
+      <value>/common/images/tool/clear.png</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>com.fastunit.support.action.ClearAction</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>0</value>
+      <value>1</value>
+      <value></value>
+      <value>/app/user.do</value>
+      <value>/app/user.do</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>department_id</value>
+      <value>user.query</value>
+      <value>2</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value></value>
+      <value>$N%</value>
+      <value>3</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>$L{app:user.form.department_id}</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>null</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>orgid</value>
+      <value>user.query</value>
+      <value>3</value>
+      <value>1</value>
+      <value>1</value>
+      <value>4</value>
+      <value>orgcode</value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>$L{app:user.query.orgid}</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>219</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>s</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>expireddate</value>
+      <value>user.query</value>
+      <value>1</value>
+      <value>1</value>
+      <value>1</value>
+      <value>8</value>
+      <value></value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value>5</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>$L{app:user.query.expireddate}</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>onclick='WdatePicker()'</value>
+      <value>SD</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>100</value>
+      <value>$N%</value>
+      <value>4</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>expired</value>
+      <value>user.query</value>
+      <value>6</value>
+      <value>1</value>
+      <value>1</value>
+      <value>10</value>
+      <value>app|expired</value>
+      <value>$N%</value>
+      <value>3</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>过期状态</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+  </rows>
+</table>

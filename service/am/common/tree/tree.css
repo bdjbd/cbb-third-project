@@ -1,0 +1,48 @@
+.tree{font-size:13px;white-space:nowrap;text-align:left;line-height:1}
+.tree div,.tree img,.tree a,.tree input{vertical-align:middle;}
+.tree a{text-decoration:none;margin-left:3px;padding:1px;cursor:default;}
+.tree span{width:18px;}
+.tree .ac{color:#000;}
+.tree a:hover{color:blue;cursor:pointer;}/*text-decoration:underline;*/
+.tree a:active{background:highlight;color:#fff;text-decoration:none;}
+.tree a.active{background:highlight;color:#fff;}
+.tree a.selected{color:windowtext;background:buttonface;}
+.tree a.insert{BORDER-TOP:green 1px solid;}
+.tree a.add{BORDER:green 1px solid;}
+.tree .clone{BORDER:red 1px solid;position:absolute;background:#808080;top:1px;font-size:13px;padding:1px;filter:Alpha(Opacity=50);}
+.tree .cc{width:13px;height:13px;margin:0}
+
+.bar{background-color:#d4d0c8;}/*border:1px solid #808080;*/
+.bar a{vertical-align:middle;border:1px solid #d4d0c8;color:#000;text-decoration:none;cursor:default;display:inline-block;white-space:nowrap;background-repeat:no-repeat;background-position:4px 50%;}
+.barff a{line-height:20px;padding:0 6px;}
+.barie a{line-height:18px;padding:2px 6px 0 6px;}
+.bar .start{width:0px;}
+.bar .separator1{height:16px;margin:0 2px;width:1px;border:1px solid;border-color:#fff #808080 #808080 #fff;display:inline-block;}
+.bar .separator2{height:16px;margin:0 2px;width:0;border-left:1px solid #808080;border-right:1px solid #fff;display:inline-block;}
+.bar td{}/*padding:0 5px*/
+.bar .over{border:1px solid;border-color:#fff #808080 #808080 #fff;}
+.bar .selected{border:1px solid;border-color:#808080 #fff #fff #808080;}
+
+.menu{cursor:default;border:1px solid;border-color:#d4d0c8 #404040 #404040 #d4d0c8;background-color:Menu;font:menu;color:#000;overflow:hidden;position:absolute;white-space:nowrap;}
+.menu .ib{border:1px solid;border-color:#fff #808080 #808080 #fff;padding:1px;}
+.menu td{white-space:nowrap;height:18px;}
+.menu img{vertical-align:middle;}
+.menu em{display:block;font:0/0 sans-serif;border:4px solid;border-color:#d4d0c8 #d4d0c8 #d4d0c8 #000;margin:4px 0 4px 6px;}
+.menu a{color:#000;text-decoration:none;margin-left:3px;cursor:default;}
+.menu a:hover{text-decoration:none;}
+.menu .over{background-color:Highlight;color:HighlightText;}
+.menu .over a{color:HighlightText;}
+.menu .over em{display:block;font:0/0 sans-serif;border:4px solid;border-color:Highlight Highlight Highlight #fff;margin:4px 0 4px 6px;}
+.menu .separator{height:4px;padding:1px;vertical-align:middle;}
+.menu .separator div{line-height:0;border-top:1px solid #808080;border-bottom:1px solid ThreeDHighlight;}
+.menu .arrow{width:16px;text-align:center;}
+.menu .icon{width:18px;}
+.menu .disabled{background:Transparent;color:GrayText;filter:Mask(Color=#010101);}
+.menu .disabled a{color:GrayText;}
+.menu .disabled_over{background:	Highlight;color:GrayText;filter:Mask(Color=#010101);}
+.menu .disabled_over a{color:GrayText;filter:}
+.menu .disabled_over em{display:block;font:0/0 sans-serif;border:4px solid;border-color:Highlight Highlight Highlight #fff;margin:4px 0 4px 6px;}
+
+/* only for tree management */
+.custom_tree{padding:1px;vertical-align:top;}
+.custom_config{padding:1px 5px;vertical-align:top;width:80%}

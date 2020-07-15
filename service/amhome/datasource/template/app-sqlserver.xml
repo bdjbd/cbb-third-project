@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database name="sqlserver">
+  <driver>
+		<class>net.sourceforge.jtds.jdbc.Driver</class>
+		<url>jdbc:jtds:sqlserver://localhost:1433;DatabaseName=app</url>
+		<username>sa</username>
+		<password>sa</password>
+	</driver>
+</database>

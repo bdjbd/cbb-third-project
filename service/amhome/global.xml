@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<global>
+	<domains>
+		<domain>app</domain>
+		<domain>adm</domain>
+		<domain>dev</domain>
+		<domain>demo</domain>
+  		<domain>am_bdp</domain>
+		<domain>cdms</domain>
+  </domains>
+	<cache-provider>MapCache</cache-provider>
+	<gzip-enabled>true</gzip-enabled>
+</global>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="JOB_TRIGGER">
+  <columns>
+    <column name="jid" type="2"/>
+    <column name="tid" type="12"/>
+    <column name="provider" type="2"/>
+    <column name="expression" type="2"/>
+    <column name="start_time" type="33"/>
+    <column name="end_time" type="33"/>
+    <column name="is_volatile" type="12"/>
+    <column name="description" type="2"/>
+    <column name="valid" type="12"/>
+    <column name="misfire_instr" type="12"/>
+    <column name="v1" type="2"/>
+    <column name="v2" type="2"/>
+    <column name="v3" type="2"/>
+    <column name="i1" type="12"/>
+    <column name="i2" type="12"/>
+    <column name="i3" type="12"/>
+    <column name="ts1" type="33"/>
+    <column name="ts2" type="33"/>
+  </columns>
+  <rows>
+    <row>
+      <value>send_remind_news</value>
+      <value>1</value>
+      <value>com.fastunit.schedule.trigger.SecondlyTriggerProvider</value>
+      <value>30</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+  </rows>
+</table>

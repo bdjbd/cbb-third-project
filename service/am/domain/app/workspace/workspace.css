@@ -1,0 +1,12 @@
+
+.UBAR{padding:0 5px;background:url(box-title-bg.gif) 50% 50% repeat-x;text-align:right;height:22px;}
+.UBAR img{float:left;vertical-align:middle;}
+.UBAR label{float:left;font-weight:bold;padding:5px;line-height:normal;;background-color:transparent}
+
+.UBP table{clear:both;}/*ff*/
+
+.UB{border:#c6b69d 1px solid;}
+.UB .UBAR{border-bottom:#c6b69d 1px solid;}
+
+.R3{background-color:#fffff0;height:22px;}
+.R3 td{padding-left:6px;padding-right:6px;color:#666}

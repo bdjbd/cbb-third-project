@@ -1,0 +1,15 @@
+.myDialog {
+    margin: -23% -45%;
+    width: 90%;
+    height: 80%;
+
+}
+
+.myDialog iframe {
+	width: 100%;
+    height:100%;
+}
+.myDialog .content {
+	width: 100%;
+    height:100%;
+}

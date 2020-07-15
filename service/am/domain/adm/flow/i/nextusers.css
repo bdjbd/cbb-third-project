@@ -1,0 +1,11 @@
+body{margin:0}
+
+.UBAR{background-color:#eef5f8;}
+.UT{background:#eef5f8;}
+
+.E41N,.E41O,.E41P{height:18px;margin-right:1px;padding:0 3px;border:1px solid;white-space:nowrap;cursor:pointer;display:inline-block;}
+.E41N{border-color:#dae6f4;}
+.E41O{border-color:#fff #849ec0 #849ec0 #fff;}
+.E41P{border-color:#849ec0 #fff #fff #849ec0;}
+.E41S{padding-left:19px;}
+.E41T{vertical-align:middle;}

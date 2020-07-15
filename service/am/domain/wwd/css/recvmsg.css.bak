@@ -1,0 +1,21 @@
+.recvMsg{
+	color:red;
+	fonst-size:1em;
+	}
+.operationDiv{
+	text-align:right;
+	width:95%;
+	height:2em;
+	display:block;	
+	}
+.recvMsgDiv{
+	width:97%;
+	margin:2px;
+	padding-left:2em;
+	padding-top:3px;
+	padding-bottom:3px;
+	display:block;
+	}
+.operationDiv a{
+	font-size:1em;
+	}

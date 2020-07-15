@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="TREECONFIG">
+  <columns>
+    <column name="tid" type="2"/>
+    <column name="gid" type="2"/>
+    <column name="tn" type="2"/>
+    <column name="t" type="12"/>
+    <column name="fa" type="2"/>
+    <column name="w" type="2"/>
+    <column name="dc" type="2"/>
+    <column name="dt" type="2"/>
+    <column name="ip" type="2"/>
+    <column name="sc" type="12"/>
+    <column name="sca" type="12"/>
+    <column name="sm" type="12"/>
+    <column name="sa" type="12"/>
+    <column name="mb" type="2"/>
+    <column name="ma" type="2"/>
+    <column name="os" type="12"/>
+    <column name="sl" type="12"/>
+    <column name="si" type="12"/>
+    <column name="f" type="12"/>
+    <column name="c" type="12"/>
+    <column name="o" type="12"/>
+    <column name="l" type="12"/>
+    <column name="ler" type="2"/>
+    <column name="lc" type="2"/>
+    <column name="lct" type="33"/>
+    <column name="lm" type="2"/>
+    <column name="lmt" type="33"/>
+    <column name="lr" type="2"/>
+    <column name="s" type="2"/>
+    <column name="viu" type="2"/>
+    <column name="vit" type="33"/>
+    <column name="vir" type="2"/>
+    <column name="v0" type="2"/>
+    <column name="v1" type="2"/>
+    <column name="v2" type="2"/>
+    <column name="v3" type="2"/>
+    <column name="v4" type="2"/>
+    <column name="v5" type="2"/>
+    <column name="i0" type="12"/>
+    <column name="i1" type="12"/>
+    <column name="i2" type="12"/>
+    <column name="i3" type="12"/>
+    <column name="i4" type="12"/>
+    <column name="i5" type="12"/>
+  </columns>
+  <rows>
+    <row>
+      <value>menu</value>
+      <value></value>
+      <value>菜单</value>
+      <value>5</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>Conframe</value>
+      <value></value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value>0</value>
+      <value>1</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value></value>
+      <value>jim</value>
+      <value>2006-10-01 00:00:00</value>
+      <value>superadmin</value>
+      <value>2018-05-08 15:53:36</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+  </rows>
+</table>

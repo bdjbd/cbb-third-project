@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sms>
+  <name>FastUnit</name>
+  <port>COM4</port>
+  <baud>9600</baud>
+  <product>wavecom</product>
+  <model>M1306B</model>
+</sms>

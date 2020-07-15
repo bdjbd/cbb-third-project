@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>企业信息</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0 maximum-scale=1.0">
+<meta http-equiv="pragma" content="no-cache">     
+<meta http-equiv="cache-control" content="no-cache,must-revalidate">   
+<meta http-equiv="expires" content="0"> 
+
+<link rel="stylesheet"	href="/domain/wwd/weshop/jquery.mobile-1.3.2.min.css" />
+<script src="/domain/wwd/weshop/jquery-1.7.1.min.js"></script>
+<script	src="/domain/wwd/weshop/jquery.mobile-1.3.2.min.js"></script>
+<style type="text/css">
+span{
+	font-weight:normal;
+	font-style: normal;
+}
+.more{
+	text-align: center;
+}
+.reals_date{
+	font-size: x-small;
+	font-weight: normal;
+	font-style: normal;
+}
+.newsImage{
+	width:100%;
+	height: auto;
+}
+</style>
+</head>
+<body>
+<!--企业信息摘要 start-->
+<div data-role="page" id="newlistPage">
+<div data-role="header" data-theme="d"><h4>二级菜单标题</h4></div>
+<div data-role="content">
+	<ul data-role="listview">
+		<li>
+		<a href="#newdetailsPage?nid=3">
+		<h4>标题1</h4>
+		<span>摘要简短的摘要信息就在这儿显示了</span>
+		</a>
+		</li>
+		<li>
+		<a>
+		<h4>标题2</h4>
+		<span>摘要简短的摘要信息就在这儿显示了摘要简短的摘要信息就在这儿显示了</span>
+		</a>
+		</li>
+		<li><div class="more">查看更多</div></li>
+	</ul>
+</div>
+</div>
+<!--企业信息摘要 end-->
+
+<!--企业信息详情 start-->
+<div data-role="page" id="newdetailsPage">
+<script type="text/javascript">
+$("#newdetailsPage").live("pageshow",function(){
+	var url=$.mobile.path.get($(this).attr("value"));
+	var index=0;
+	if(url!=""&&url.length>0){
+		var params=url.split("&");
+		$("#myResult").html(params);
+	}
+});
+</script>
+<div data-role="header" data-theme="d"><h4>二级菜单标题</h4></div>
+<div data-role="content">
+	<div class="ui-block-d">
+	<div id="myResult"></div>
+		<h3>标题</h3>
+		<span class="reals_date">发布日期:2014-04-26 11:31</span>
+		<img class="newsImage" src="/files/NEWSDETAIL/1/illstration1/chrysanthemum.jpg">
+		<img class="newsImage" src="/files/NEWSDETAIL/1/illstration2/desert.jpg">
+		<img class="newsImage" src="/files/NEWSDETAIL/1/illstration1/chrysanthemum.jpg">
+		<span id="deatilContent">
+		 这几天看鬼脚七的微信公众号，很有意思，说的是他最近开悟的经历和分享。曾经有朋友也指导过我，可是我太过小我，太过聪明，所以只有断断续续的悟。我只明白一点，不管是老子说的道，佛家说的空，还是基督说的Lord，他们描述的都是同一个东西。（到这里当我说的都是狗屁）
+当然我不是来玩文字游戏的，也不是要来教你悟道的。只是想借用贤者的智慧来平定自己浮躁的心。
+上面老子的这段话，用最简单最潮的话来翻译就是：
+（使我介然有知，行于大道，唯施是畏）就算自己再牛X，也要谦虚。
+（大道甚夷，而人好径）有那么宽敞的路你不走，偏要想法设法找捷径。<img class="newsImage" src="/files/NEWSDETAIL/1/illstration1/chrysanthemum.jpg">
+（朝甚除，田甚芜，仓甚虚；服文采，带利剑，厌饮食，财货有馀；是为盗夸。非道也哉！）肚子里没货还要装逼，就不怕天打雷劈么。
+－－－－－－－－技术分割线（前面这个梗有点长＝＝）－－－－－－－－－
+我们这里先把攻城师们分为三类，初中级，高级，大神。
+		</span>
+	</div>
+</div>
+</div>
+<!--企业信息详情 end-->
+</body>
+</html>

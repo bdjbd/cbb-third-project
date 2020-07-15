@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>${window-title}</title>
+${head}
+<link rel="stylesheet" type="text/css" href="/common/skins/base.css" />
+<link rel="stylesheet" type="text/css" href="${skin}" />
+<script type="text/javascript" src="/common/mootools.js"></script>
+<script type="text/javascript" src="/common/fastunit.js"></script>
+${include-css}
+${include-js-top}
+</head>
+<body ${body-attribute}  onLoad='javascript:FAI_OCX_OpenDoc("false")'>
+<form method="post" ENCTYPE="multipart/form-data">
+<table cellspacing="0">
+	<tr>
+		<td>
+		${heading}
+		${subheading}
+		${message}
+		${unit}
+		${debug}
+		</td>
+	</tr>
+	<tr height="100%">
+		<td width="99%" align="center">
+			<OBJECT id="FAI_OCX" codeBase="/common/OfficeControl.cab#version=5,0,2,1" height="750" width="1060" classid="clsid:C9BC4DFF-4248-4a3c-8A49-63A7D317F404" VIEWASTEXT>
+				<param name="MakerCaption" value="陕西维德科技股份有限公司">
+				<param name="MakerKey" value="5E11E2A9FD2994283B37F941364E61015C4241BB">
+				<param name="ProductCaption" value="榆林神华能源有限责任公司">
+				<param name="ProductKey" value="B787298DB2AE69D8BFCED9E03CADBD1ED18FCC2E">
+				<PARAM NAME="_ExtentY" VALUE="20981">
+				<PARAM NAME="BorderColor" VALUE="14402205">
+				<PARAM NAME="BackColor" VALUE="-2147483643">
+				<PARAM NAME="ForeColor" VALUE="-2147483640">
+				<PARAM NAME="TitlebarColor" VALUE="14402205">
+				<PARAM NAME="TitlebarTextColor" VALUE="0">
+				<PARAM NAME="BorderStyle" VALUE="1">
+				<PARAM NAME="Titlebar" VALUE="0">
+				<PARAM NAME="Toolbars" VALUE="1">
+				<PARAM NAME="Caption" VALUE="caption">
+				<PARAM NAME="IsShowToolMenu" VALUE="0">
+				<PARAM NAME="IsNoCopy" VALUE="0">
+				<PARAM NAME="IsHiddenOpenURL" VALUE="0">
+				<PARAM NAME="MaxUploadSize" VALUE="0">
+				<PARAM NAME="Menubar" VALUE="0">
+				<PARAM NAME="Statusbar" VALUE="0">
+				<PARAM NAME="FileNew" VALUE="-1">
+				<PARAM NAME="FileOpen" VALUE="-1">
+				<PARAM NAME="ReadOnly" VALUE="1">
+				<PARAM NAME="FileClose" VALUE="-1">
+				<PARAM NAME="FileSave" VALUE="-1">
+				<PARAM NAME="FileSaveAs" VALUE="-1">
+				<PARAM NAME="FilePrint" VALUE="-1">
+				<PARAM NAME="FilePrintPreview" VALUE="-1">
+				<PARAM NAME="FilePageSetup" VALUE="-1">
+				<PARAM NAME="FileProperties" VALUE="-1">
+				<PARAM NAME="IsStrictNoCopy" VALUE="0">
+				<PARAM NAME="IsUseUTF8URL" VALUE="-1">
+				<PARAM NAME="MenubarColor" VALUE="-2147483643">
+				<PARAM NAME="IsUseControlAgent" VALUE="0">
+				<PARAM NAME="IsUseUTF8Data" VALUE="-1">
+				<PARAM NAME="IsSaveDocExtention" VALUE="0">
+				<PARAM NAME="IsDirectConnect" VALUE="0">
+				<PARAM NAME="SignCursorType" VALUE="0">
+				<PARAM NAME="IsResetToolbarsOnOpen" VALUE="0">
+				<PARAM NAME="IsSaveDataIfHasVDS" VALUE="0">
+				<SPAN STYLE="color:red">不能加载所需的 ActiveX 控件，请检查当前IE安全设置！</SPAN>
+			</OBJECT>
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+${include-js-bottom}
+</html>

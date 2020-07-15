@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="ENUMCONFIG">
+  <columns>
+    <column name="enumid" type="2"/>
+    <column name="gid" type="2"/>
+    <column name="enumn" type="2"/>
+    <column name="dm" type="12"/>
+    <column name="d" type="2"/>
+    <column name="de" type="2"/>
+    <column name="c" type="12"/>
+    <column name="o" type="12"/>
+    <column name="dpid" type="2"/>
+    <column name="ar" type="2"/>
+    <column name="l" type="12"/>
+    <column name="ler" type="2"/>
+    <column name="lc" type="2"/>
+    <column name="lct" type="33"/>
+    <column name="lm" type="2"/>
+    <column name="lmt" type="33"/>
+    <column name="lr" type="2"/>
+    <column name="viu" type="2"/>
+    <column name="vit" type="33"/>
+    <column name="vir" type="2"/>
+    <column name="v1" type="2"/>
+    <column name="v2" type="2"/>
+    <column name="v3" type="2"/>
+    <column name="v4" type="2"/>
+    <column name="v5" type="2"/>
+    <column name="i1" type="12"/>
+    <column name="i2" type="12"/>
+    <column name="i3" type="12"/>
+  </columns>
+  <rows>
+    <row>
+      <value>role</value>
+      <value></value>
+      <value>角色</value>
+      <value>2</value>
+      <value></value>
+      <value>select roleid as value,rolename as name from arole</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value></value>
+      <value></value>
+      <value>0</value>
+      <value></value>
+      <value>superadmin</value>
+      <value>2018-05-09 12:40:58</value>
+      <value>superadmin</value>
+      <value>2018-05-09 12:40:58</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+    </row>
+  </rows>
+</table>

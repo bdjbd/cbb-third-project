@@ -1,0 +1,1 @@
+if(TreeSettings) TreeSettings.supportCheckAll=true;

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database name="db2">
+	<driver>
+		<class>COM.ibm.db2.jdbc.net.DB2Driver</class>
+		<url>jdbc:db2://localhost/APP</url>
+		<username>db2admin</username>
+		<password>db2</password>
+		<!-- <isolation></isolation> -->
+		<!-- <parameter name="" value=""/> -->
+	</driver>
+  <datasource>
+		<!-- <jndi-name>jdbc/db2pool</jndi-name>
+		<jndi-class>weblogic.jndi.WLInitialContextFactory</jndi-class> -->
+		<!-- <jndi-url></jndi-url> -->
+		<!-- <username></username> -->
+		<!-- <password></password> -->
+		<!-- <parameter name="" value=""/> -->
+		<!-- <transaction name="" jta-user-transaction=""/> -->
+	</datasource>
+	<!-- <fetch-size>20</fetch-size> -->
+	<!-- <batch-size>20</batch-size> -->
+	<!-- <scrollable>true</scrollable> -->
+</database>

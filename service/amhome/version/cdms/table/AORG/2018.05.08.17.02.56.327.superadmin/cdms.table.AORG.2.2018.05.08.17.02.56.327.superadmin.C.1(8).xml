@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="C">
+  <columns>
+    <column name="c" type="2"/>
+    <column name="t" type="2"/>
+    <column name="cl" type="2"/>
+    <column name="dt" type="12"/>
+    <column name="pk" type="12"/>
+    <column name="nn" type="12"/>
+    <column name="l" type="12"/>
+    <column name="s" type="12"/>
+    <column name="g" type="2"/>
+    <column name="gr" type="12"/>
+    <column name="v" type="12"/>
+    <column name="o" type="12"/>
+    <column name="d" type="2"/>
+    <column name="uk" type="12"/>
+    <column name="f" type="2"/>
+    <column name="e" type="12"/>
+    <column name="v1" type="2"/>
+    <column name="v2" type="2"/>
+    <column name="v3" type="2"/>
+    <column name="i1" type="12"/>
+    <column name="i2" type="12"/>
+  </columns>
+  <rows>
+    <row>
+      <value>car_start_time</value>
+      <value>AORG</value>
+      <value>用车开始时间</value>
+      <value>33</value>
+      <value>0</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>1</value>
+      <value>190</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+    <row>
+      <value>car_start_time_hour</value>
+      <value>AORG</value>
+      <value>用车开始时</value>
+      <value>12</value>
+      <value>0</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+    <row>
+      <value>car_start_time_min</value>
+      <value>AORG</value>
+      <value>用车开始分</value>
+      <value>12</value>
+      <value>0</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+    <row>
+      <value>car_stop_time</value>
+      <value>AORG</value>
+      <value>用车结束时间</value>
+      <value>33</value>
+      <value>0</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>1</value>
+      <value>200</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+    <row>
+      <value>car_stop_time_hour</value>
+      <value>AORG</value>
+      <value>用车结束时</value>
+      <value>12</value>
+      <value>0</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+    <row>
+      <value>car_stop_time_min</value>
+      <value>AORG</value>
+      <value>用车结束分</value>
+      <value>12</value>
+      <value>0</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+    <row>
+      <value>orgname</value>
+      <value>AORG</value>
+      <value>机构名</value>
+      <value>2</value>
+      <value>0</value>
+      <value>0</value>
+      <value>50</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>1</value>
+      <value>30</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+    <row>
+      <value>orgid</value>
+      <value>AORG</value>
+      <value>机构id</value>
+      <value>2</value>
+      <value>1</value>
+      <value>1</value>
+      <value>50</value>
+      <value>$N%</value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>10</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+  </rows>
+</table>

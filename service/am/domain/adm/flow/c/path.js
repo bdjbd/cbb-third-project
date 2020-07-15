@@ -1,0 +1,1 @@
+mxBasePath = '/domain/adm/flow/c';

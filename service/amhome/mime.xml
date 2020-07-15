@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<mime>
+	<type extension="*" value="application/octet-stream"/>
+	<type extension="exe" value="application/octet-stream"/>
+	<type extension="doc" value="application/msword"/>
+	<type extension="dot" value="application/msword"/>
+	<type extension="pdf" value="application/pdf"/>
+	<type extension="rtf" value="application/rtf"/>
+	<type extension="xls" value="application/vnd.ms-excel"/>
+	<type extension="pot" value="application/vnd.ms-powerpoint"/>
+	<type extension="pps" value="application/vnd.ms-powerpoint"/>
+	<type extension="ppt" value="application/vnd.ms-powerpoint"/>
+	<type extension="mpp" value="application/vnd.ms-project"/>
+	<type extension="js" value="application/x-javascript"/>
+	<type extension="cer" value="application/x-x509-ca-cert"/>
+	<type extension="crt" value="application/x-x509-ca-cert"/>
+	<type extension="der" value="application/x-x509-ca-cert"/>
+	<type extension="zip" value="application/zip"/><!-- application/x-zip-compressed -->
+	<type extension="mid" value="audio/mid"/>
+	<type extension="mp3" value="audio/mpeg"/>
+	<type extension="ra" value="audio/x-pn-realaudio"/>
+	<type extension="ram" value="audio/x-pn-realaudio"/>
+	<type extension="wav" value="audio/x-wav"/>
+	<type extension="bmp" value="image/bmp"/>
+	<type extension="gif" value="image/gif"/>
+	<type extension="jpeg" value="image/jpeg"/>
+	<type extension="jpg" value="image/jpeg"/>
+	<type extension="ico" value="image/x-icon"/>
+	<type extension="png" value="image/x-png"/>	
+	<type extension="css" value="text/css"/>
+	<type extension="htm" value="text/html"/>
+	<type extension="html" value="text/html"/>
+	<type extension="txt" value="text/plain"/>
+	<type extension="mpeg" value="video/mpeg"/>
+	<type extension="mpg" value="video/mpeg"/>
+	<type extension="mov" value="video/quicktime"/>
+	<type extension="rar" value="application/rar"/>
+	<type extension="asf" value="video/x-ms-asf"/>
+	<type extension="avi" value="video/x-msvideo"/>
+</mime>

@@ -1,0 +1,11 @@
+.myDialog {
+	/*margin: -200px 0 0 -200px;*/
+	width: 358px;
+    height: 355px;
+}
+
+.myDialog iframe {
+	margin: auto;
+	width: 400px;
+	height: 400px;
+}

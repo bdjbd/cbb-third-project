@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" minWidth="20" minHeight="20"
+				creationComplete="application1_creationCompleteHandler(event)" backgroundAlpha="0">
+	<mx:Script>  
+		<![CDATA[  
+			import com.zwl.util.EisCore;
+			
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.soap.WebService;
+			import mx.utils.URLUtil; 
+			
+			
+			private var socket:Socket = null;
+			private var msgCount:int=0;//消息条数
+			public var userId:String="";//当前登录用户id
+ 
+						
+			protected function button1_clickHandler(event:MouseEvent):void  
+			{  
+				var arr:Array=new Array();
+				arr[0]=txt_socket.text;
+				arr[1]="192.168.1.30";
+				arr[2]="8080";
+				connectionServer(arr);
+				
+			}
+			/**
+			 * IE端上线后，通知flex跟服务建立连接
+			 * @param userId，用户编号
+			 * */
+			
+			public function connectionServer(msg:Array):void{
+				//ExternalInterface.call("abc","开始连接："+msg[0]+";"+msg[1]);
+				this.userId=msg[0];
+				//myWebService.getMessage.send();
+				if(socket==null || !socket.connected){
+					//连接服务器(ip,port)  
+					socket = new Socket();
+					socket.connect(msg[1],10086);
+					
+					//成功连接状态事件  
+					socket.addEventListener(Event.CONNECT,function connFun(e:Event):void{  
+						//l_status.text = "连接成功！！！";  
+						//ExternalInterface.call("abc","连接成功：");
+					});  
+					//连接中断事件  
+					socket.addEventListener(Event.CLOSE,function closeFun(e:Event):void{  
+						//l_status.text = "连接中断..."; 
+						//ExternalInterface.call("abc","中断了！！！"+msg[0]);
+						connectionServer(msg);
+					});  
+					//连接异常事件  
+					socket.addEventListener(IOErrorEvent.IO_ERROR,function closeFun(e:IOErrorEvent):void{  
+						//l_status.text = "连接异常 ..."+e.toString();  
+					});  
+					//服务器信息事件  
+					socket.addEventListener(ProgressEvent.SOCKET_DATA,function dataFun(e:ProgressEvent):void{  
+						var getMsg:ByteArray = new ByteArray; 
+						socket.readBytes(getMsg);
+						/* this.msgCount=this.msgCount+1;*/
+						open.visible=true;
+						ExternalInterface.call("abc","收到新消息！"+getMsg.toString());
+						ExternalInterface.call("haveMessage",getMsg.toString());
+						
+						/* var urlr:URLRequest=new URLRequest("http://"+msg[1]+":"+msg[2]+"/app/abdp_message.list.do");
+						ExternalInterface.call("window.open",urlr.url,'select','height=300,width=600,location=no,scrollbars=no,resizable=0'); */
+					});  
+				}  
+				
+				//ByteArray存放数据  
+				var message:ByteArray = new ByteArray();  
+				//使用UTF形式防止中文乱码  
+				message.writeUTFBytes(msg[0]+"\n");  
+				//ExternalInterface.call("abc","发送登录用户："+msg[0]+"\r\n");
+				//数据写入缓冲区  
+				socket.writeBytes(message);
+				//将缓冲区数据发送出去  
+				socket.flush();
+			}
+			
+			protected function button2_clickHandler(event:MouseEvent):void
+			{
+			var urlr:URLRequest=new URLRequest("http://www.baidu.com");
+				navigateToURL(urlr,"_blank");
+			}
+			
+			/**
+			 *初始化，调用WebService,查询历史未读消息
+			 * */
+			protected function application1_creationCompleteHandler(event:FlexEvent):void
+			{
+
+				var msg:String=ExternalInterface.call("getUserInfo");
+				var varmsgArr:Array=msg.split(";");
+				var msg:String=ExternalInterface.call("abc",varmsgArr.length.toString());
+				//如果客户端发来的信息，是合法的
+				if(varmsgArr.length>2)
+				{
+					userId=	varmsgArr[0];
+					ExternalInterface.call("abc","连接的用户："+userId);
+					connectionServer(varmsgArr);
+					 /* var urlr:URLRequest=new URLRequest("http://"+varmsgArr[1]+":"+varmsgArr[2]+"/app/abdp_message.list.do");
+					ExternalInterface.call("window.open",urlr.url,'select','height=300,width=600,location=no,scrollbars=no,resizable=0'); */ 
+					
+				}
+				
+			}
+			
+			/**
+			 * 检查当前用户id，是否包含在新消息的接收者范围内
+			 * 如果包含在范围内，返回true,否则返回false
+			 * */
+			private function isInclude(userId:String,receives:String):Boolean
+			{
+				userId=","+userId+",";
+				receives=","+receives+",";
+				ExternalInterface.call("abc",userId+" in "+receives);
+				if(receives.indexOf(userId)>-1)
+				{
+					ExternalInterface.call("abc","in！");
+					return true;
+				}
+				ExternalInterface.call("abc","out！");
+				return false;
+			}
+
+
+			/* protected function myWebService_resultHandler(event:ResultEvent):void
+			{
+				var count:int=event.result as int;
+				this.msgCount=count;
+				//如果有未读消息
+				if(this.msgCount>0)
+				{
+					open.visible=true;
+				}
+			}
+ */
+		]]>  
+	</mx:Script>  
+	<mx:Button x="256" y="56" label="按钮" click="button1_clickHandler(event)" visible="false"/>  
+	<mx:Button id="open" x="0" y="0" label="打开" click="button2_clickHandler(event)" visible="false"/>  
+	<mx:TextInput x="20" y="56" id="txt_socket" visible="false"/>  
+	<!--<mx:WebService id="myWebService" 
+				   wsdl="http://192.168.1.30:8080/services/FindMessageWebService?wsdl"
+				   result="myWebService_resultHandler(event)">
+		<mx:operation name="getMessage">
+			<mx:request>
+				<userId>
+					{this.userId}
+				</userId>
+			</mx:request>
+		</mx:operation>
+		
+	</mx:WebService>-->
+
+
+</mx:Application>

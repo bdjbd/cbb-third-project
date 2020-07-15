@@ -1,0 +1,24 @@
+.dco{height:30px;font-size:16px;font-weight:bold;background-color:#d4d0c8;}
+.dtitle{height:30px;font-size:16px;font-weight:bold;background-color:#d4d0c8;}
+.dbar{background-color:#ffffcc;padding-bottom:5px;}
+.dbody{text-align:center;padding-top:5px;padding-bottom:5px;}
+
+.invalid{background-color:#bbb;}
+.invalid input{color:#ccc;}
+.invalid select{color:#ccc;}
+
+.co{width:600px;}
+.icon{vertical-align:middle;margin-bottom:3px;}
+.subtitle{padding-top:1px;padding-bottom:1px;}
+
+.lock{width:18px;height:18px;background:url(/domain/dev/o/lock.png) no-repeat;cursor:pointer;display:block;float:left}
+.unlock{width:18px;height:18px;background:url(/domain/dev/o/unlock.png) no-repeat;cursor:pointer;display:block;float:left}
+.locker{height:18px;padding-bottom:1px;font-size:11px;}
+
+.id{text-transform:lowercase}
+.tid{text-transform:uppercase}
+
+.tips{margin-top:5px;padding:6px;border:1px solid #ccc;}
+.tips legend{background:url(/domain/dev/tips/tips.gif) no-repeat;padding-left:20px}
+.tip1{color:red;}
+.tip3{}

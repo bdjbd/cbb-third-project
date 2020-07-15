@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<server>
+  <host>smtp.163.com</host>
+  <user>m18629038292@163.com</user>
+  <password>1119.wan.0125</password>
+  <charset>UTF-8</charset>
+</server>

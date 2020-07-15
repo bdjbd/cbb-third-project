@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+ * Specifies the full path to your Home directory.
+ *
+ * For unix this might be:
+ * <home>/var/fastunithome</home>
+ *
+ * For Windows this might be:
+ * <home>c:/fastunithome</home>
+ D:/WeiStore/soft/ws/WEB-INF
+ 
+-->
+<home>D:\cdms_servers\service\amhome</home>

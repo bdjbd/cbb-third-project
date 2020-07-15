@@ -1,0 +1,29 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">  
+ <html>  
+     <head>  
+         <title>打印窗口</title>  
+     </head>  
+     <script language="javascript">   
+     <!--   
+         function openApp()   
+         {   
+             var url = "/demo/report.do?e=0";   
+             document.write('<applet code = "com.fastunit.view.report.JRPrinterApplet.class" CODEBASE = "/common/applets" ARCHIVE = "jasperreports-3.7.6-applet.jar,commons-logging-1.1.1.jar,commons-collections-3.2.1.jar" WIDTH = "300" HEIGHT = "40">');   
+             document.write('<PARAM NAME = "scriptable" VALUE="false">');   
+             document.write('<PARAM NAME = "REPORT_URL" VALUE ="'+url+'">');   
+             document.write('</applet>');   
+         }  
+         -->   
+     </script>  
+     <body bgcolor="#FFFFFF">  
+          
+         <APPLET CODE="JRPrinterApplet" CODEBASE = "/common/applets" ARCHIVE = "jasperreports-3.7.6.jar,jasperreports-3.7.6-applet.jar"  WIDTH="300" HEIGHT="40">
+		 </XMP>
+           <!--   <PARAM NAME=CODE VALUE="JRPrinterApplet.class">  
+             <PARAM NAME="type" VALUE="application/x-java-applet;version=1.2.2">  
+             <PARAM NAME="scriptable" VALUE="false">   -->
+             <PARAM NAME="REPORT_URL" VALUE="/demo/report.do?e=0">  
+         </APPLET>  
+         
+     </body>  
+ </html>  

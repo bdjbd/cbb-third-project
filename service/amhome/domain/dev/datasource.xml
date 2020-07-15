@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database name="hsql">
+  <driver>
+		<class>org.hsqldb.jdbcDriver</class>
+		<url>jdbc:hsqldb:file:$C{home}/domain/dev/database/dev;shutdown=true</url>
+		<username>sa</username>
+		<password></password>
+	</driver>
+</database>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database name="mysql">
+  <driver>
+		<class>com.mysql.jdbc.Driver</class>
+		<url>jdbc:mysql://localhost/app</url>
+		<username>root</username>
+		<password>root</password>
+	</driver>
+</database>

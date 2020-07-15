@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Demo for flex on uc</title>
+  <style type="text/css">
+  html,body{
+    padding: 0;
+    margin: 0;
+  }
+  .demo1{
+    background-color: yellow;
+    text-align: center;
+    height: 80px;    
+    display: -webkit-flex;     
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    /* for uc */
+    display: -webkit-box;
+    -webkit-box-align: center;
+  }
+  .demo1>div{
+    background-color: green;
+    margin: 2px;       
+    -webkit-flex: 1;          
+    flex: 1;         
+    /* for uc */
+    -webkit-box-flex: 1;      
+    -moz-box-flex: 1;         
+    -ms-flex: 1;                
+  }
+  .demo2{
+    background-color: yellow;
+    width: 80px;
+    height: 200px;
+    display: -webkit-flex;     
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    /* for uc */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-align: center;
+  }
+  .demo2>div{
+    background-color: green;
+    width: 40px;
+    margin: 2px;       
+    -webkit-flex: 1;          
+    flex: 1;         
+    /* for uc */
+    -webkit-box-flex: 1;      
+    -moz-box-flex: 1;         
+    -ms-flex: 1;    
+  }
+  </style>
+</head>
+<body>
+
+
+<h2>左右排列，上下居中</h2>
+
+
+
+
+<div class="demo1">
+  <div>flex</div>
+  <div>flex</div>
+  <div>flex</div>
+  <div>flex</div>
+  <div>flex</div>
+</div>
+
+
+
+
+<h2>上下排列，左右居中</h2>
+
+
+
+
+<div class="demo2">
+  <div>flex</div>
+  <div>flex</div>
+  <div>flex</div>
+  <div>flex</div>
+  <div>flex</div>
+</div>
+
+
+</body>
+</html>

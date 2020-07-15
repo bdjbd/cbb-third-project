@@ -1,0 +1,8 @@
+<html>
+	<head><title>测试自定义的对话框 By:Jedliu From:Jedliu.cublog.cn</title></head>
+	<script src="msgbox/msgbox.js" language="javascript"></script>
+	<!--注意BODY这里必须要使用onload加载load_func()函数-->
+	<body onload="load_func()">
+		<input type="button" onclick="msgbox('确认删除么?','【注意】<font color=red>删除后无法恢复数据</font>,点击确认执行删除操作,点击取消不再执行操作!','alert(\'执行了删除操作!\')',1,1)" value="删除数据">
+	</body>
+</html>

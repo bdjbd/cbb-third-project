@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database name="oracle">
+  	<driver>
+		<class>oracle.jdbc.driver.OracleDriver</class>
+		<url>jdbc:oracle:thin:@127.0.0.1:1521:orcl</url>
+		<username>app</username>
+		<password>app</password>
+	</driver>
+</database>

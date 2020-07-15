@@ -1,0 +1,14 @@
+.B{height:30px;background:url(menu_bg.gif) repeat-x center center;border-top:1px #849ec0 solid;border-bottom:1px #849ec0 solid;}
+.BT{height:24px;margin:0 2px;width:1px;border:1px solid;border-color:#fff #808080 #808080 #fff;display:inline-block;}
+.BS{height:24px;margin:0 2px;width:0;border-left:1px solid #9ac6ff;border-right:1px solid #fff;display:inline-block;}
+.E41N,.E41O,.E41P,.E41D{height:28px; line-height:28px;margin-right:1px;padding:0 3px;white-space:nowrap;cursor:pointer;display:inline-block;border:0px solid;}
+.E41N{border:0px;}
+.E41O{FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#e7efff,endColorStr=#FFFFFF)}
+.E41P{FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#e7efff,endColorStr=#4D70A7)}
+.E41S{padding-left:19px;}
+.E41T{vertical-align:middle; font-size: 12px;font-weight:bold;}
+.E41DT{vertical-align:middle;color:graytext;}
+
+body{margin:0}
+.user{color:#FFFFFF}
+.user a{color:#FFFFFF}

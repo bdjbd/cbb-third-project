@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database name="postgresql">
+  <driver>
+		<class>org.postgresql.Driver</class>
+		<url>jdbc:postgresql://192.168.1.99:5432/lxny_p2p_conf</url>
+		<username>postgres</username>
+		<password>postgres</password>
+	</driver>
+</database>

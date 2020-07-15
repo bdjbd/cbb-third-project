@@ -1,0 +1,3 @@
+function syncMember(memberCode){
+	doAjax("/wwd/ws_member1.list/syncmember.do?membercode="+memberCode);
+	}

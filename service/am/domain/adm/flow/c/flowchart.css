@@ -1,0 +1,39 @@
+p{
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+#flowchart{}
+.grid{background:url('/domain/adm/flow/c/images/grid.gif')}
+
+.taskDialog {
+	margin: -240px 0 0 -390px;
+	width: 760px;
+	height: 460px;
+}
+
+.taskDialog iframe {
+	background-color:#fff;
+	width: 760px;
+	height: 460px;
+}
+
+.taskInstDialog {
+	margin: -280px 0 0 -410px;
+	width: 800px;
+	height: 480px;
+}
+
+.taskInstDialog iframe {
+	background-color:#fff;
+	width: 800px;
+	height: 480px;
+}
+
+#toolbarC img {margin-top:4px;margin-bottom:3px;cursor:move;}

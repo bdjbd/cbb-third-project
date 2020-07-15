@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script>
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	//WeixinJSBridge.call('hideOptionMenu');
+	var str="";
+	var funcArray=new Array();
+	var i=0;
+	for(var p in WeixinJSBridge){
+		str+=p+"<br>";
+		funcArray[i]="<code>"+WeixinJSBridge+"</code>";
+		i++;
+	}
+	document.getElementById("parment").innerHTML=str;
+	init();
+	WeixinJSBridge.on("sendAppMessage",function(){
+		document.getElementById("testCode").innerHTML="sendAppMessage";
+	});
+	});
+document.addEventListener("shareFriend",function(){
+	document.getElementById("testCode").innerHTML="sendAppMessage11";
+});
+//-----------------------------------------
+/*
+*分析到朋友圈
+*/
+function shareFriend(){
+	WeixinJSBridge.invoke("shareTimeline",
+			{"img_url":"http://www.wisdeem.cn:83/_Upload/CKFiles/images/20140221135729991.jpg",
+		"link":"http://www.wisdeem.cn",
+		"desc": "啊...哈哈哈哈，这个是测试微信的JavaScript",
+		"title":"微信分享JavaScript测试"
+		});
+}
+/**
+ *分享到腾讯微博 
+ */
+ function shareTenWeibo(){
+	var title="分享到腾讯微博测试JavaScript";
+	var link="http://www.wisdeem.cn";
+	WeixinJSBridge.invoke('shareWeibo',{
+		"content":title+link,
+		"url":link
+	});
+}
+/**
+ * 发送给朋友
+ */
+ function sendFriend(){
+	var imgUrl="http://www.wisdeem.cn:83/_Upload/CKFiles/images/20140221135729991.jpg";
+	var link="http://www.wisdeem.cn";
+	var title="发送给朋友测试";
+	WeixinJSBridge.invoke('sendAppMessage',{
+		"img_url":imgUrl,
+		"link":link,
+		"desc":"这个是发送给朋友的描述内容",
+		"title":title
+	});
+}
+
+function init(){
+	var str=WeixinJSBridge.invoke.toString();
+	document.getElementById("invoke").innerHTML=str;
+	str=WeixinJSBridge.call.toString();
+	document.getElementById("call").innerHTML=str;
+	str=WeixinJSBridge.on.toString()
+	document.getElementById("on").innerHTML=str;
+	str=WeixinJSBridge.env.toString();
+	document.getElementById("env").innerHTML=str;
+	str=WeixinJSBridge.log.toString();
+	document.getElementById("log").innerHTML=str;
+	str=WeixinJSBridge._fetchQueue.toString();
+	document.getElementById("fetchQueue").innerHTML=str;
+	str=WeixinJSBridge._handleMessageFromWeixin.toString();
+	document.getElementById("handleFW").innerHTML=str;
+	str=WeixinJSBridge._hasInit.toString();
+	document.getElementById("hasInit").innerHTML=str;
+	try{
+		var wstr="";
+		for(var p in WeixinJSBridge    ){
+			wstr+=p+":"+WeixinJSBridge[p]+"<br/>";
+		}
+		//document.getElementById("testCode").innerHTML=wstr ;
+	}catch(e ){
+		document.getElementById("error").innerHTML="出错了哦！<br/>"+e;
+	}
+	
+	
+}
+//-----------------------------------------
+</script>
+</head>
+<body>
+<h1>测试页面</h1>
+<h2><button onclick='JavaScript:shareFriend()'>分享到朋友圈</button></h2>
+<h2><button onclick='shareTenWeibo()'>分享到腾讯微博</button></h2>
+<h2><button onclick='sendFriend()'>发送给朋友</button></h2>
+<hr />
+<font style="font-size: large;font-weight: bold;color: blue;">parment</font><br/>
+<code id="parment"></code>
+<hr/>
+<font style="font-size: large;font-weight: bold;color: blue;">invoke</font><br/>
+<code id="invoke"></code>
+<hr/>
+<font style="font-size: large;font-weight: bold;color: blue;">call</font><br/>
+<code  id="call"></code>
+<hr/>
+<font style="font-size: large;font-weight: bold;color: blue;">on</font><br/>
+<code  id="on"></code>
+<hr/>
+<font style="font-size: large;font-weight: bold;color: blue;">env </font><br/>
+<code id="env"></code>
+<hr/>
+<font style="font-size: large;font-weight: bold;color: blue;">log </font><br/>
+<code id="log"></code>
+<hr/>
+<font style="font-size: large;font-weight: bold;color: blue;">fecthcQueue</font><br/>
+<code id="fetchQueue"></code>
+<hr/>
+<font style="font-size: large;font-weight: bold;color: blue;">handleFW</font><br/>
+<code id="handleFW"></code>
+<hr/>
+<font style="font-size: large;font-weight: bold;color: blue;">hasInit</font><br/>
+<code id="hasInit"></code>
+<hr/>
+<font style="font-size: large;font-weight: bold;color: blue;">Window_JsApi</font><br/>
+<code id="testCode"></code>
+
+<hr/><hr style="color:red;background: red;" width="2em"/>
+<font style="font-size: large;font-weight: bold;color:red;">Error!</font><br/>
+<code id="error" style="color: red;"></code>
+
+<hr/>
+<font style="font-size: large;font-weight: bold;color:red;">Result!</font><br/>
+<code id="result" style="color: red;"></code>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+</body>
+</html>

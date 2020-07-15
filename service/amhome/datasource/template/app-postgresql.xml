@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database name="postgresql">
+  <driver>
+		<class>org.postgresql.Driver</class>
+		<url>jdbc:postgresql://localhost/app</url>
+		<username>postgres</username>
+		<password>postgres</password>
+	</driver>
+</database>

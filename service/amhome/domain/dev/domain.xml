@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<domain>
+	<datasource>dev/</datasource>
+	<convert-value>false</convert-value>
+	<style>
+		<skin>windows</skin>
+ 		<page-template>dev/page.html</page-template>
+	</style>
+</domain>

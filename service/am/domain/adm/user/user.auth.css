@@ -1,0 +1,7 @@
+.count{font:icon;}
+.count input[type="checkbox"]{width:15px;height:15px;}
+.title{color:blue;}
+.right{text-align:right;padding-bottom:1px}
+
+.date{width:86px;border:1px solid #aaa;margin-left:10px;font-size:9px;}
+.expired{color:red;}

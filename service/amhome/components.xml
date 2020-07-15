@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+	<database>
+		<bean id="db2" class="com.fastunit.jdbc.database.DB2"/>
+		<bean id="db2400" class="com.fastunit.jdbc.database.DB2400"/>
+		<bean id="oracle" class="com.fastunit.jdbc.database.Oracle"/>
+		<bean id="mysql" class="com.fastunit.jdbc.database.MySQL"/>
+		<bean id="sqlserver" class="com.fastunit.jdbc.database.SQLServer"/>
+		<bean id="sybase" class="com.fastunit.jdbc.database.Sybase"/>
+		<bean id="hsql" class="com.fastunit.jdbc.database.HSQL"/>
+		<bean id="postgresql" class="com.fastunit.jdbc.database.PostgreSQL"/>
+	</database>
+	<transaction>
+		<bean id="null" class="com.fastunit.jdbc.transaction.NullTransaction"/>
+		<bean id="jdbc" class="com.fastunit.jdbc.transaction.JDBCTransaction"/>
+		<bean id="weblogic" class="com.fastunit.jdbc.transaction.WeblogicTransaction"/>
+		<bean id="websphere" class="com.fastunit.jdbc.transaction.WebSphereTransaction"/>
+		<bean id="jboss" class="com.fastunit.jdbc.transaction.JBossTransaction"/>
+		<bean id="jonas" class="com.fastunit.jdbc.transaction.JOnASTransaction"/>
+		<bean id="jotm" class="com.fastunit.jdbc.transaction.JOTMTransaction"/>
+		<bean id="jrun4" class="com.fastunit.jdbc.transaction.JRun4Transaction"/>
+		<bean id="orion" class="com.fastunit.jdbc.transaction.OrionTransaction"/>
+		<bean id="resin" class="com.fastunit.jdbc.transaction.ResinTransaction"/>
+		<bean id="sunone" class="com.fastunit.jdbc.transaction.SunONETransaction"/>
+	</transaction>
+	<generator>
+		<bean id="1" class="com.fastunit.jdbc.generator.DateGenerator"/>
+		<bean id="2" class="com.fastunit.jdbc.generator.TimeGenerator"/>
+		<bean id="3" class="com.fastunit.jdbc.generator.TimeStampGenerator"/>
+		<bean id="4" class="com.fastunit.jdbc.generator.UserGenerator"/>
+		<bean id="5" class="com.fastunit.jdbc.generator.UUIDGenerator"/>
+	</generator>	
+	<unit>
+		<bean id="1" class="com.fastunit.view.unit.component.FormUnit"/>
+		<bean id="2" class="com.fastunit.view.unit.component.ListUnit"/>
+		<bean id="3" class="com.fastunit.view.unit.component.QueryUnit"/>
+		<bean id="4" class="com.fastunit.view.unit.component.FramesetUnit"/>
+		<bean id="7" class="com.fastunit.view.unit.component.ReportUnit"/>
+	</unit>
+	<element>
+		<bean id="0" class="com.fastunit.view.element.component.TextElement"/>
+		<bean id="9" class="com.fastunit.view.element.component.LabelElement"/>
+		<bean id="1" class="com.fastunit.view.element.component.TextFieldElement"/>
+		<bean id="2" class="com.fastunit.view.element.component.HiddenElement"/>
+		<bean id="3" class="com.fastunit.view.element.component.SelectElement"/>
+		<bean id="5" class="com.fastunit.view.element.component.ButtonElement"/>
+		<bean id="6" class="com.fastunit.view.element.component.RadioElement"/>
+		<bean id="8" class="com.fastunit.view.element.component.TextAreaElement"/>
+		<bean id="11" class="com.fastunit.view.element.component.AnchorElement"/>
+		<bean id="12" class="com.fastunit.view.element.component.ImageElement"/>
+		<bean id="13" class="com.fastunit.view.element.component.FlashElement"/>
+		<bean id="20" class="com.fastunit.view.element.component.PasswordElement"/>
+		<bean id="21" class="com.fastunit.view.element.component.ResetButtonElement"/>
+		<bean id="25" class="com.fastunit.view.element.component.FileElement"/>
+		<bean id="30" class="com.fastunit.view.element.component.IFrameElement"/>
+		<bean id="41" class="com.fastunit.view.element.component.ButtonBoxElement"/>
+		<bean id="42" class="com.fastunit.view.element.component.LinkedSelectElement"/>
+		<bean id="43" class="com.fastunit.view.element.component.SelectFieldElement"/>
+		<bean id="44" class="com.fastunit.view.element.component.MultiSelectFieldElement"/>
+		<bean id="46" class="com.fastunit.view.element.component.RadioFieldElement"/>
+		<bean id="48" class="com.fastunit.view.element.component.GlobalRadioFieldElement"/>
+		<bean id="52" class="com.fastunit.view.element.component.CheckBoxFieldElement"/>
+		<bean id="53" class="com.fastunit.view.element.component.CheckBoxSetFieldElement"/>
+		<bean id="56" class="com.fastunit.view.element.component.SuggestionElement"/>
+		<bean id="60" class="com.fastunit.view.element.component.OrderElement"/>
+		<bean id="68" class="com.fastunit.view.element.component.ProgressBarElement"/>
+		<bean id="80" class="com.fastunit.view.element.component.UnitElement"/>
+		<bean id="85" class="com.fastunit.view.element.component.TreeElement"/>
+		<bean id="87" class="com.fastunit.view.element.component.ChartElement"/>
+		<bean id="90" class="com.fastunit.view.element.component.CKEditorElement"/>
+		<bean id="91" class="com.fastunit.view.element.component.EditorElement"/>
+		<bean id="92" class="com.fastunit.view.element.component.StampElement"/>
+		<bean id="99" class="com.fastunit.view.element.component.CustomElement"/>
+	</element>
+	<formatter>
+		<bean id="1" class="com.fastunit.framework.formatter.DateFormatter"/>
+		<bean id="2" class="com.fastunit.framework.formatter.NumberFormatter"/>
+		<bean id="3" class="com.fastunit.framework.formatter.CurrencyFormatter"/>
+		<bean id="5" class="com.fastunit.framework.formatter.LocaleCurrencyFormatter"/>
+		<bean id="6" class="com.fastunit.framework.formatter.ChinaCurrencyFormatter"/>
+		<bean id="4" class="com.fastunit.framework.formatter.CutFormatter"/>
+	</formatter>
+	<navigator>
+		<bean id="1" class="com.fastunit.view.unit.navigator.TextPageNavigator"/>
+		<bean id="2" class="com.fastunit.view.unit.navigator.IconPageNavigator"/>
+		<bean id="3" class="com.fastunit.view.unit.navigator.SelectPageNavigator"/>
+		<bean id="4" class="com.fastunit.view.unit.navigator.ListPageNavigator"/>
+	</navigator>
+	<validator>
+		<bean id="1" class="com.fastunit.framework.validation.LongValidator"/>
+		<bean id="2" class="com.fastunit.framework.validation.DecimalValidator"/>
+		<bean id="3" class="com.fastunit.framework.validation.DateValidator"/>
+		<bean id="4" class="com.fastunit.framework.validation.TimeValidator"/>
+		<bean id="5" class="com.fastunit.framework.validation.TimestampValidator"/>
+		<bean id="11" class="com.fastunit.framework.validation.DateCompareValidator"/>
+		<bean id="12" class="com.fastunit.framework.validation.TimeCompareValidator"/>
+		<bean id="13" class="com.fastunit.framework.validation.TimestampCompareValidator"/>
+		<bean id="14" class="com.fastunit.framework.validation.MultiSelectValidator"/>
+		<bean id="15" class="com.fastunit.framework.validation.MultiSelectMaxValidator"/>
+		<bean id="16" class="com.fastunit.framework.validation.MultiSelectMinValidator"/>
+		<bean id="21" class="com.fastunit.framework.validation.EmailValidator"/>
+		<bean id="41" class="com.fastunit.framework.validation.ReservedWordsValidator"/>
+		<bean id="42" class="com.fastunit.framework.validation.KeywordsValidator"/>
+	</validator>
+	<chart>
+		<bean id="1" class="com.fastunit.view.chart.jfc.impl.PieJFC"/>
+		<bean id="2" class="com.fastunit.view.chart.jfc.impl.Pie3DJFC"/>
+		<bean id="11" class="com.fastunit.view.chart.jfc.impl.BarJFC"/>
+		<bean id="12" class="com.fastunit.view.chart.jfc.impl.StackedBarJFC"/>
+		<bean id="13" class="com.fastunit.view.chart.jfc.impl.Bar3DJFC"/>
+		<bean id="14" class="com.fastunit.view.chart.jfc.impl.StackedBar3DJFC"/>
+		<bean id="15" class="com.fastunit.view.chart.jfc.impl.WaterfallJFC"/>
+		<bean id="21" class="com.fastunit.view.chart.jfc.impl.LineJFC"/>
+		<bean id="22" class="com.fastunit.view.chart.jfc.impl.Line3DJFC"/>
+		<bean id="31" class="com.fastunit.view.chart.jfc.impl.AreaJFC"/>
+		<bean id="32" class="com.fastunit.view.chart.jfc.impl.StackedAreaJFC"/>
+		<bean id="101" class="com.fastunit.view.chart.fcf.impl.PieFCF"/>
+		<bean id="102" class="com.fastunit.view.chart.fcf.impl.Pie3DFCF"/>
+		<bean id="111" class="com.fastunit.view.chart.fcf.impl.ColumnFCF"/>
+		<bean id="112" class="com.fastunit.view.chart.fcf.impl.Column3DFCF"/>
+		<bean id="121" class="com.fastunit.view.chart.fcf.impl.LineFCF"/>
+	</chart>
+</beans>
+

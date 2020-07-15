@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="JOB">
+  <columns>
+    <column name="jid" type="2"/>
+    <column name="gid" type="2"/>
+    <column name="description" type="2"/>
+    <column name="classname" type="2"/>
+    <column name="is_durable" type="12"/>
+    <column name="is_volatile" type="12"/>
+    <column name="is_stateful" type="12"/>
+    <column name="requests_recovery" type="12"/>
+    <column name="state" type="12"/>
+    <column name="o" type="12"/>
+    <column name="l" type="12"/>
+    <column name="ler" type="2"/>
+    <column name="lc" type="2"/>
+    <column name="lct" type="33"/>
+    <column name="lm" type="2"/>
+    <column name="lmt" type="33"/>
+    <column name="lr" type="2"/>
+    <column name="viu" type="2"/>
+    <column name="vit" type="33"/>
+    <column name="vir" type="2"/>
+    <column name="v1" type="2"/>
+    <column name="v2" type="2"/>
+    <column name="v3" type="2"/>
+    <column name="i1" type="12"/>
+    <column name="i2" type="12"/>
+    <column name="i3" type="12"/>
+    <column name="ts1" type="33"/>
+    <column name="ts2" type="33"/>
+  </columns>
+  <rows>
+    <row>
+      <value>send_remind_news</value>
+      <value></value>
+      <value>发送保养、年检、保险提醒信息</value>
+      <value>com.cdms.SendRemindNews</value>
+      <value>0</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value></value>
+      <value>superadmin</value>
+      <value>2018-01-24 11:53:46</value>
+      <value>superadmin</value>
+      <value>2018-05-03 12:21:38</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+  </rows>
+</table>

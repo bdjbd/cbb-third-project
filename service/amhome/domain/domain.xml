@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<domain>
+	<index-url>/app/index.do</index-url>
+	<datasource>app</datasource>
+	<convert-value>true</convert-value>
+	<style>
+		<skin>blue</skin>
+ 		<frameset-template>frameset.html</frameset-template>
+ 		<page-template>page.html</page-template>
+ 		<unit-template>unit.html</unit-template>
+	</style>
+	<action>
+		<default-proxy>com.fastunit.framework.action.DefaultProxy</default-proxy>
+		<default-action>com.fastunit.support.action.DefaultAction</default-action>
+	</action>
+	<window-title>
+		<prefix>查保宝</prefix>
+		<suffix></suffix>
+	</window-title>
+	<list>
+		<default-size>20</default-size>
+		<pages-max>10</pages-max>
+		<index-continuous>false</index-continuous>
+		<index-width>20</index-width>
+		<select-width>20</select-width>
+		<rows-config>R1,R2</rows-config>
+  </list>
+</domain>

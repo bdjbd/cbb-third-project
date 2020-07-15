@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>二维码</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.qrcode.min.js"></script>
+	</head>
+
+		<body>
+			<div id="output"></div>
+			<img id="imgOne" />
+			
+			<script>
+				//      	function getQueryString(key) {
+				// 	var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)", "i");
+				// 	var r = window.location.search.substr(1).match(reg);
+				// 	if (r != null) return unescape(r[2]); return null;
+				// };
+
+				function UrlSearch()
+				{
+					var name,value;
+					var str=location.href; //取得整个地址栏
+					var num=str.indexOf("?")
+					str=str.substr(num+1); //取得所有参数   stringvar.substr(start [, length ]
+
+					var arr=str.split("&"); //各个参数放到数组里
+					for(var i=0;i < arr.length;i++){
+						num=arr[i].indexOf("=");
+						if(num>0){
+							name=arr[i].substring(0,num);
+							value=arr[i].substr(num+1);
+							this[name]=value;
+						}
+					}
+				};
+
+				var Request=new UrlSearch(); //实例化
+				jQuery(function() {
+					var qrcode = jQuery('#output').qrcode({
+						render  : "canvas",//也可以替换为table
+						width   : 350,
+						height  : 350,
+						text    : Request.qrcode_url_key
+					}).hide();
+					var canvas=qrcode.find('canvas').get(0);
+					jQuery('#imgOne').attr('src',canvas.toDataURL('image/jpg'));
+				});
+			</script>
+		</body>
+	</html>

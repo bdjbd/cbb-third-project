@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<upload>
+	<maxSize>10095760</maxSize>
+	<allowedExtensions>
+	    <extension>txt</extension>
+	    <extension>xls</extension>
+	    <extension>gif</extension>
+	    <extension>png</extension>
+	    <extension>jpg</extension>
+	    <extension>jpeg</extension>
+		<extension>bin</extension>
+    </allowedExtensions>
+	<allowedTypes>
+	    <contentType>text/plain</contentType>
+	    <contentType>image/gif</contentType>
+	    <contentType>image/x-png</contentType>
+		<contentType>image/png</contentType>
+	    <contentType>image/jpeg</contentType>
+	    <contentType>application/octet-stream</contentType>
+	    <contentType>application/vnd.ms-excel</contentType>
+    </allowedTypes>
+</upload>
+
+
+
+

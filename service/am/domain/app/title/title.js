@@ -1,0 +1,60 @@
+function changeView(url){
+	//如果定制单色导航，设置选中项的颜色
+	window.parent.app.location=url;
+}
+function openDev(){
+	window.open('/dev/index.do');
+}
+
+function getUserInfo(){
+	var userObj=document.getElementsByName("title.loginuserid")[0];
+	
+	var ipObj=document.getElementsByName("title.ipaddres")[0];
+	var port=document.getElementsByName("title.serverport")[0];
+	//登录账号;服务器ip;端口
+	var msg="@"+userObj.value;
+	if(ipObj.value!=""){
+		msg=msg+";"+ipObj.value;
+	}
+
+	if(port.value!=""){
+		msg=msg+";"+port.value;
+	}
+	return msg;
+}
+
+function openMsgWindow(){
+	window.open("/app/abdp_message.list.do",'select','left='+(window.screen.width-600)/2+',top='+((window.screen.height-300)/2-56)+',height=300,width=600,location=no,scrollbars=no,resizable=0,menubar=no,titlebar=no,toolbar=no');
+	document.getElementsByName("soundimg")[0].src="/domain/app/title/blank2.png";
+}
+
+function abc(msg){
+	//alert(msg);
+	
+}
+
+
+function haveMessage(receives){
+	var currentUserObj=document.getElementsByName("title.loginuserid")[0];
+	var currentUserId=","+currentUserObj.value+",";
+	//最后一个逗号，是在服务端追加的
+	var receives=","+receives;
+	//alert(currentUserId+";"+receives);
+	if(receives.indexOf(currentUserId)>-1){
+		document.getElementsByName("soundimg")[0].src="/domain/app/title/sount.gif";
+		 var div = document.getElementById('msgSound');
+		document.getElementsByName("soundswf")[0].play();
+	}
+}
+
+function openPswWindow(){
+	window.open("/app/changepassword.do",'select','left='+(window.screen.width-600)/2+',top='+((window.screen.height-300)/2-56)+',height=300,width=600,location=no,scrollbars=no,resizable=0,menubar=no,titlebar=no,toolbar=no');
+	document.getElementsByName("soundimg")[0].src="/domain/app/title/blank2.png";
+}
+
+function modifPassword(){
+	window.top.frames[1].frames[1].location='/app/changepassword.do';
+}
+function openUserInfo(){
+	window.top.frames[1].frames[1].location='/app/user.personal.do?m=e';
+}

@@ -1,0 +1,25 @@
+drop table CGROUP;
+drop table T;
+drop table C;
+drop table INCREMENTOR;
+drop table UNIT;
+drop table ELEMENT;
+drop table ENUMCONFIG;
+drop table ENUM;
+drop table TREECONFIG;
+drop table TREE;
+drop table CHART;
+drop table DPCONFIG;
+drop table DP;
+drop table LANG;
+drop table JOB;
+drop table JOB_TRIGGER;
+
+drop table FLOW;
+drop table FLOW_VAR;
+drop table FLOW_TASK;
+drop table FLOW_ACTION;
+drop table FLOW_ELEMENT;
+drop table FLOW_USER;
+drop table FLOW_SPLIT;
+drop table FLOW_JOIN;

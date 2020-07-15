@@ -1,0 +1,169 @@
+var currentRows=9;
+ function removechilds(){   
+		var msg_type = document.getElementsByName("ws_fsendmess.form.msg_type");
+		if(!isEmpty(msg_type[0])){
+			msg_type=msg_type[0].value;
+        var vTable = document.getElementById("u_g_ws_fsendmess.form");//取得table
+	    var vTd = vTable.childNodes[4];
+		
+		vTd.childNodes[4].style.display="none";
+		vTd.childNodes[5].style.display="none";
+		vTd.childNodes[6].style.display="none";
+		vTd.childNodes[7].style.display="none";
+		vTd.childNodes[8].style.display="none";
+		//vTd.childNodes[9].style.display="none";
+		ShowContentType();
+		}
+	}
+function ShowContentType(){
+
+    var msg_type = document.getElementsByName("ws_fsendmess.form.msg_type")[0].value;
+    var vTable = document.getElementById("u_g_ws_fsendmess.form");//取得table
+	var vTd = vTable.childNodes[4];
+    //1 文字
+    //6  图文
+	if(msg_type==1){
+
+		vTd.childNodes[3].style.display=""
+		vTd.childNodes[4].style.display="none";
+		vTd.childNodes[5].style.display="none";
+		vTd.childNodes[6].style.display="none";
+		vTd.childNodes[7].style.display="none";
+		vTd.childNodes[8].style.display="none";
+		//vTd.childNodes[9].style.display="none";
+		/**
+		var vTable = document.getElementById("u_g_ws_fsendmess.form");
+		for(var i=9;i<vTable.rows.length;i++){
+			vTable.rows[i].style.display='none';
+			}
+		document.getElementById("ws_fsendmess.form.addnews").style.display="none";
+		document.getElementById("ws_fsendmess.form.deletenews").style.display="none";
+		
+		currentRows=9;
+		**/
+	}else if(msg_type==2){
+
+		vTd.childNodes[3].style.display="none"
+        vTd.childNodes[4].style.display="";
+		vTd.childNodes[5].style.display="none";
+		vTd.childNodes[6].style.display="none";
+		vTd.childNodes[7].style.display="none";
+		vTd.childNodes[8].style.display="none";
+		//vTd.childNodes[9].style.display="none";
+
+	}else if(msg_type==6){
+
+		vTd.childNodes[3].style.display="none"
+        vTd.childNodes[4].style.display="none";
+		vTd.childNodes[5].style.display="";
+		vTd.childNodes[6].style.display="";
+		vTd.childNodes[7].style.display="";
+		vTd.childNodes[8].style.display="";	
+		/**
+		document.getElementById("ws_fsendmess.form.addnews").style.display="";
+		document.getElementById("ws_fsendmess.form.deletenews").style.display="";
+		**/
+	}
+	
+	
+}
+
+function addNews(){
+	//alert(currentRows);
+	var vTable = document.getElementById("u_g_ws_fsendmess.form");
+	if(currentRows>=vTable.rows.length){
+		alert("最多可以增加10条图文消息");
+		return;
+		}else{
+			vTable.rows[currentRows++].style.display="";
+			vTable.rows[currentRows++].style.display="";
+			vTable.rows[currentRows++].style.display="";
+		}
+	
+	}
+	
+function deleteNews(){
+	var vTable = document.getElementById("u_g_ws_fsendmess.form");
+	//alert(currentRows);
+	if(currentRows<=9){
+		alert("最少需要1条图文消息");
+		return;	
+	}else{
+			vTable.rows[currentRows-1].style.display="none";
+			vTable.rows[currentRows-1].cells[1].childNodes[0].value="";
+			vTable.rows[currentRows-2].style.display="none";
+			vTable.rows[currentRows-2].cells[1].childNodes[0].childNodes[0].value="";
+			alert(vTable.rows[currentRows-2].cells[1].childNodes[0].childNodes[0]);
+			vTable.rows[currentRows-3].style.display="none";
+			vTable.rows[currentRows-3].cells[1].childNodes[0].value="";
+			currentRows=currentRows-3;
+			
+		}
+}
+
+
+function showNews(){
+}
+
+function validFile(event){
+		var temp="";
+		var obj = event.srcElement ? event.srcElement:event.target;
+		if(obj.value!=null&&obj.value!="underfined"&&obj.value!=""){
+			var hz=obj.value.substr(obj.value-4);
+			if(hz.indexOf("jpg")<1||hz.indexOf("JPG")<1){
+				alert("只能上传JPG格式的文件");
+			}
+		}
+}
+
+function initFileTypeValid(unitid){	
+	removechilds();
+	var btn=document.getElementById(unitid+'.save');
+	btn.onclick=function(){
+		var imageCover=document.getElementById("ws_fsendmess.form.fimage.25.adda");
+		if(!isEmpty(imageCover)){
+			 imageCover=imageCover.firstChild.value;
+			 if(!isEmpty(imageCover)&&!isJPG(imageCover)){
+					alert("请检查文件格式，只允许上传JPG格式图片");
+					return;
+				}
+			}
+		
+		var imagestr=document.getElementById('ws_fsendmess.form.imgcover.25.adda');
+		if(!isEmpty(imagestr)){
+			imagestr=imagestr.firstChild.value;
+			if(!isEmpty(imagestr)&&!isJPG(imagestr)){
+				alert("请检查文件格式，只允许上传JPG格式图片");
+				return;
+			}
+		}
+		doActionWithAjaxValidation('/wwd/'+unitid+'/ajax.do','/wwd/'+unitid+'/save.do');
+		}
+		
+		/**
+		var vTable = document.getElementById("u_g_ws_fsendmess.form");
+		for(var i=9;i<vTable.rows.length;i++){
+			vTable.rows[i].style.display='none';
+			}
+		document.getElementById("ws_fsendmess.form.addnews").style.display="none";
+		document.getElementById("ws_fsendmess.form.deletenews").style.display="none";
+		currentRows=9;
+		**/
+
+}
+
+function isEmpty(obj){            
+	if(obj==null)return true;       
+	if(obj=="")return true;         
+	if(obj=="undefined")return true;
+	if(obj=="null")return true      
+	return false;                   
+}
+function isJPG(filNameStr){
+		 var suffix=filNameStr.substr(filNameStr.length-4);
+		 if(filNameStr.indexOf("jpg")>0||filNameStr.indexOf("JPG")>0){
+				return true;
+			}else{
+				return false;
+			}
+}

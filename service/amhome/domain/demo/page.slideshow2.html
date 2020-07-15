@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>${window-title}</title>
+${head}
+<link rel="stylesheet" type="text/css" href="/common/skins/base.css" />
+<link rel="stylesheet" type="text/css" href="${skin}" />
+<link rel="stylesheet" type="text/css" href="/common/slideshow2/slideshow.css" />
+<script type="text/javascript" src="/common/slideshow2/mootools.js"></script>
+<script type="text/javascript" src="/common/fastunit.js"></script>
+<script type="text/javascript" src="/common/slideshow2/slideshow.js"></script>
+${include-css}
+${include-js-top}
+</head>
+<body ${body-attribute}>
+<form method="post">
+<table cellspacing="0"><tr><td>
+${heading}
+${subheading}
+${message}
+${unit}
+${debug}
+</td></tr></table>
+</form>
+</body>
+${include-js-bottom}
+</html>

@@ -1,0 +1,6 @@
+function slideFrame(o){
+	var left = o.src.indexOf('/l.png')>0;
+	//o.src=left?'../common/slide/frame/r.png':'../common/slide/frame/l.png';
+	parent.document.getElementsByTagName('frameset')[0].cols =left?'10,*':'200,*';
+	$('slide_main').style.display=left?'none':'';
+}

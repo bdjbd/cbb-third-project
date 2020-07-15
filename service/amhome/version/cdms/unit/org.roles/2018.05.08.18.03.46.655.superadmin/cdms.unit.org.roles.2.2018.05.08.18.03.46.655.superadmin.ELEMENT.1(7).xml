@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="ELEMENT">
+  <columns>
+    <column name="eid" type="2"/>
+    <column name="uid" type="2"/>
+    <column name="c" type="12"/>
+    <column name="b" type="12"/>
+    <column name="s" type="12"/>
+    <column name="o" type="12"/>
+    <column name="r" type="2"/>
+    <column name="ms" type="12"/>
+    <column name="me" type="12"/>
+    <column name="ma" type="12"/>
+    <column name="a" type="12"/>
+    <column name="au" type="12"/>
+    <column name="aum" type="12"/>
+    <column name="vv" type="2"/>
+    <column name="ve" type="2"/>
+    <column name="vc" type="2"/>
+    <column name="vr" type="12"/>
+    <column name="vm" type="12"/>
+    <column name="n" type="2"/>
+    <column name="al" type="12"/>
+    <column name="l" type="2"/>
+    <column name="t" type="2"/>
+    <column name="d" type="2"/>
+    <column name="cu" type="2"/>
+    <column name="css" type="2"/>
+    <column name="v1" type="12"/>
+    <column name="v2" type="12"/>
+    <column name="v3" type="12"/>
+    <column name="w" type="12"/>
+    <column name="h" type="12"/>
+    <column name="qm" type="2"/>
+    <column name="wp" type="2"/>
+    <column name="ws" type="2"/>
+    <column name="wpt" type="12"/>
+    <column name="wpl" type="12"/>
+    <column name="wpb" type="12"/>
+    <column name="wpr" type="12"/>
+    <column name="ww" type="12"/>
+    <column name="wwm" type="12"/>
+    <column name="wh" type="12"/>
+    <column name="whm" type="12"/>
+    <column name="wc" type="2"/>
+    <column name="wcu" type="2"/>
+    <column name="g" type="2"/>
+    <column name="wrs" type="12"/>
+    <column name="wcs" type="12"/>
+    <column name="wa" type="12"/>
+    <column name="wv" type="12"/>
+    <column name="ls" type="12"/>
+    <column name="ata" type="12"/>
+    <column name="aa" type="2"/>
+    <column name="ap" type="2"/>
+    <column name="ai" type="2"/>
+    <column name="ad" type="2"/>
+    <column name="ac" type="2"/>
+    <column name="av" type="2"/>
+    <column name="c1" type="2"/>
+    <column name="i1" type="12"/>
+    <column name="arr" type="12"/>
+    <column name="ars" type="2"/>
+    <column name="asf" type="2"/>
+    <column name="aff" type="2"/>
+    <column name="asm" type="2"/>
+    <column name="afm" type="2"/>
+    <column name="v0" type="2"/>
+    <column name="v4" type="2"/>
+    <column name="v5" type="2"/>
+    <column name="c0" type="2"/>
+    <column name="c2" type="2"/>
+    <column name="c3" type="2"/>
+    <column name="c4" type="2"/>
+    <column name="c5" type="2"/>
+    <column name="c6" type="2"/>
+    <column name="c7" type="2"/>
+    <column name="c8" type="2"/>
+    <column name="c9" type="2"/>
+    <column name="i0" type="12"/>
+    <column name="i2" type="12"/>
+    <column name="i3" type="12"/>
+    <column name="i4" type="12"/>
+    <column name="i5" type="12"/>
+    <column name="i6" type="2"/>
+    <column name="i7" type="12"/>
+    <column name="i8" type="12"/>
+    <column name="i9" type="12"/>
+  </columns>
+  <rows>
+    <row>
+      <value>orgid</value>
+      <value>org.roles</value>
+      <value>2</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value></value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>机构编号</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>count</value>
+      <value>org.roles</value>
+      <value>0</value>
+      <value>1</value>
+      <value>1</value>
+      <value>6</value>
+      <value></value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>count</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>r</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>save</value>
+      <value>org.roles</value>
+      <value>5</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value></value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>1</value>
+      <value>1</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>$L{button.save}</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>E5B</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>r</value>
+      <value>1</value>
+      <value>1</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>com.fastunit.adm.org.OrgAuthAction</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>reloadTree()</value>
+      <value>/adm/org.roles.do</value>
+      <value>/adm/org.roles.do</value>
+      <value></value>
+      <value>保存失败</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>privileges</value>
+      <value>org.roles</value>
+      <value>30</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value></value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>privileges</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>frameborder="0"</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>p</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>e0</value>
+      <value>org.roles</value>
+      <value>0</value>
+      <value>1</value>
+      <value>1</value>
+      <value>2</value>
+      <value></value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value></value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>&lt;div style='border:1px #999999 solid;height:3px;background-color:red;margin-top:3px;margin-bottom:3px;'&gt;&lt;div&gt;</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>r</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>_checkall_</value>
+      <value>org.roles</value>
+      <value>52</value>
+      <value>1</value>
+      <value>1</value>
+      <value>4</value>
+      <value></value>
+      <value>3</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>name0</value>
+      <value>0</value>
+      <value></value>
+      <value>全选/全不选</value>
+      <value></value>
+      <value>onclick=checkAll()</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>check</value>
+      <value></value>
+      <value>r</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+    <row>
+      <value>roles</value>
+      <value>org.roles</value>
+      <value>85</value>
+      <value>1</value>
+      <value>1</value>
+      <value>8</value>
+      <value>adm|org.role</value>
+      <value>1</value>
+      <value>3</value>
+      <value>3</value>
+      <value>0</value>
+      <value>0</value>
+      <value>9</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>roles</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>r</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+    </row>
+  </rows>
+</table>

@@ -1,0 +1,26 @@
+.FLP{}
+.FLB{color:red;}
+
+.FLTT input,img{vertical-align:middle;}
+.FLTS{height:20px;color:#336699;display:none;}
+
+.FLDU{margin: -200px 0 0 -110px;width: 200px;height:286px;}
+.FLDU iframe{background-color:#fff;width: 200px;height:286px;}
+
+.FRE{margin: -200px 0 0 -300px;width: 600px;height:380px;}
+.FRE iframe{background-color:#fff;width: 600px;height:380px;}
+
+.TOOLBAR{padding-top:5px;}
+.TOOLBAR span{margin-left:5px;margin-right:5px;}
+.TOOLBAR input{margin-left:5px;margin-right:5px;}
+
+.LOG{margin: -230px 0 0 -390px;width: 780px;height:440px;}
+.LOG iframe{background-color:#fff;width:780px;height:440px;}
+
+.LOG_NAME{padding:2px;color:blue;font-weight:bold;}
+.LOG_LOG{padding:2px;}
+.LOG_OPINION{}
+.LOG_USERNAME{margin-left:24px;}
+.LOG_FINISHTIME{margin-left:24px;}
+.LOG_TASK{margin-left:24px;}
+.LOG_ACTION{margin-left:24px;}

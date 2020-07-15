@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script>
+function _call(func,params,callback) { 
+	if (!func || typeof func !== 'string') { return; }; 
+	if (typeof params !== 'object') { params = {}; }; 
+	var callbackID = (_callback_count++).toString(); 
+	if (typeof callback === 'function') {
+		_callback_map[callbackID] = callback; 
+		}; 
+		var msgObj = {'func':func,'params':params}; 
+		msgObj[_MESSAGE_TYPE] = 'call'; 
+		msgObj[_CALLBACK_ID] = callbackID; 
+		_sendMessage(JSON.stringify(msgObj)); }
+		function _call(func,params,callback) { 
+			if (!func || typeof func !== 'string') { return; 
+		}; 
+		if (typeof params !== 'object') { params = {}; }; 
+		var callbackID = (_callback_count++).toString(); 
+		if (typeof callback === 'function') { 
+			_callback_map[callbackID] = callback;
+			}; 
+		var msgObj = {'func':func,'params':params}; 
+		msgObj[_MESSAGE_TYPE] = 'call'; 
+		msgObj[_CALLBACK_ID] = callbackID; 
+		_sendMessage(JSON.stringify(msgObj)); 
+	}
+	function _on(event,callback){ 
+			if (!event || typeof event !== 'string') { return; }; 
+			if (typeof callback !== 'function') { return; }; 
+			_event_hook_map[event] = callback; 
+			}
+	function _env(key) { 
+		return _session_data[key]; 
+	}
+	function _log(fmt) { 
+		var argv = []; 
+		for (var i = 0; i < arguments.length; i++) { 
+			argv.push(arguments[i]);
+		};
+		var fm = argv.shift(); 
+		var msg; 
+		try { 
+			msg = vsprintf(fm,argv); 
+			}catch(e) { 
+				msg = fmt; 
+				} 
+			_call('log',{'msg':msg}); 
+		}
+	function _fetchQueue() { 
+		var messageQueueString = JSON.stringify(_sendMessageQueue); 
+		_sendMessageQueue = []; //window.JsApi && JsApi.keep_setReturnValue && window.JsApi.keep_setReturnValue('SCENE_FETCHQUEUE', messageQueueString); _setResultValue('SCENE_FETCHQUEUE', messageQueueString); return messageQueueString; }function _handleMessageFromWeixin(message) { var msgWrap = message; switch(msgWrap[_MESSAGE_TYPE]){ case 'callback': { if(typeof msgWrap[_CALLBACK_ID] === 'string' && typeof _callback_map[msgWrap[_CALLBACK_ID]] === 'function'){ var ret = _callback_map[msgWrap[_CALLBACK_ID]](msgWrap['__params']); delete _callback_map[msgWrap[_CALLBACK_ID]]; // can only call once //window.JsApi && JsApi.keep_setReturnValue && window.JsApi.keep_setReturnValue('SCENE_HANDLEMSGFROMWX', JSON.stringify(ret)); _setResultValue('SCENE_HANDLEMSGFROMWX', JSON.stringify(ret)); return JSON.stringify(ret); } //window.JsApi && JsApi.keep_setReturnValue && window.JsApi.keep_setReturnValue('SCENE_HANDLEMSGFROMWX', JSON.stringify({'__err_code':'cb404'})); 
+		_setResultValue('SCENE_HANDLEMSGFROMWX', JSON.stringify({'__err_code':'cb404'})); 
+		return JSON.stringify({'__err_code':'cb404'}); } break; 
+		case 'event': { 
+			if(typeof msgWrap[_EVENT_ID] === 'string' && typeof _event_hook_map[msgWrap[_EVENT_ID]] === 'function'){ 
+				var ret = _event_hook_map[msgWrap[_EVENT_ID]](msgWrap['__params']); 
+				//window.JsApi && JsApi.keep_setReturnValue && window.JsApi.keep_setReturnValue('SCENE_HANDLEMSGFROMWX', JSON.stringify(ret)); 
+				_setResultValue('SCENE_HANDLEMSGFROMWX', JSON.stringify(ret)); 
+				return JSON.stringify(ret); } //window.JsApi && JsApi.keep_setReturnValue && window.JsApi.keep_setReturnValue('SCENE_HANDLEMSGFROMWX', JSON.stringify({'__err_code':'ev404'})); 
+				_setResultValue('SCENE_HANDLEMSGFROMWX', JSON.stringify({'__err_code':'ev404'})); 
+				return JSON.stringify({'__err_code':'ev404'}); 
+				} 
+		break; 
+				} 
+		}true
+</script>
+</head>
+<body>
+</body>
+</html>

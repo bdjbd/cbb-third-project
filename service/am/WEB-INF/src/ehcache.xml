@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="true" monitoring="autodetect"
+         dynamicConfig="true">
+
+    <!-- <diskStore path="java.io.tmpdir"/> -->
+
+    <cacheManagerPeerProviderFactory class="net.sf.ehcache.distribution.RMICacheManagerPeerProviderFactory"
+                          properties="peerDiscovery=manual,
+                          rmiUrls=//10.0.0.14:40000/fastunit"
+                          propertySeparator="," />
+
+    <cacheManagerPeerListenerFactory
+            class="net.sf.ehcache.distribution.RMICacheManagerPeerListenerFactory"
+						properties="hostName=10.0.0.10, port=40000, socketTimeoutMillis=2000"/>
+
+    <defaultCache maxEntriesLocalHeap="1000000" eternal="true" overflowToDisk="false">
+    </defaultCache>
+
+</ehcache>

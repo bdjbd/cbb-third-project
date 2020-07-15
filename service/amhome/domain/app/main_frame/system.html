@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>${window-title}</title> ${head}
+	<script type="text/javascript" src="/common/mootools.js"></script>
+	<script type="text/javascript" src="/common/fastunit.js"></script>
+	${include-css} ${include-js-top}
+
+    <link rel="stylesheet" type="text/css" href="/app/main_frame/Styles/admin-all.css" />
+    <link rel="stylesheet" type="text/css" href="/app/main_frame/Styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="/app/main_frame/Styles/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/app/main_frame/Styles/ui-lightness/jquery-ui-1.8.22.custom.css" />
+    <script type="text/javascript" src="/app/main_frame/Scripts/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="/app/main_frame/Scripts/jquery-ui-1.8.22.custom.min.js"></script>
+    <script type="text/javascript" src="/app/main_frame/Scripts/index.js"></script>	
+
+	<script type="text/javascript">
+	//<!--
+		//改变菜单View
+		function changeMenuView(url){
+			//如果定制单色导航，设置选中项的颜色
+			Menuframe.location=url;
+		}
+		
+
+	//-->
+    </script>
+    
+</head>
+<body>
+
+		<div class="member" style="display: none;position: absolute;right:40px;top:30px;z-index: 1000;">
+			<ul style="border-radius: 5px;background-color: #BEC7D8;height: 49px;width: 85px;text-align: center;font-size: 14px;">
+				<li style="line-height: 25px;">
+					 <a href="#"  onclick="changeConView('/app/changepassword.do')" >修改密码</a>
+				</li>
+				<li style="line-height: 25px;">
+					 <a href="#"  onclick='javaScript:try{if(Android){Android.exitApp()}}catch(e){doLink("/app/logout/logout.do");}'>安全退出</a>
+				</li>
+			</ul>
+		</div>
+    <div class="warp" id="warp">
+        <!--头部开始-->
+        <div class="top_c">
+			<img style="padding-top: 5px;" class="titleimg" src="/app/main_frame/img/logo1.png">
+            <!--报警声音-->
+			<audio id="alarm">
+				<source src="/audio/alarm.ogg" type="audio/ogg" />
+                <source src="/audio/alarm.mp3" type="audio/mpeg" />
+                报警
+			</audio>
+			<!--提醒声音-->
+			<audio id="remind">
+				<source src="/audio/remind.ogg" type="audio/ogg" />
+                <source src="/audio/remind.mp3" type="audio/mpeg" />
+                提醒
+			</audio>
+            <div class="top-menu">
+                <ul class="top-menu-nav">
+                    <li>${unit}</li>
+                </ul>
+            </div>
+            <div class="top-nav">
+				
+			</div>
+        </div>
+        <!--头部结束-->
+
+        <!--左边菜单开始-->
+        <div class="left_c left" id="left" style="left: 8px;">
+            <h1>操作菜单</h1>
+            <div class="acc">
+                <iframe name="Menuframe" id="Menuframe" class="Menuframe" src="/adm/menu.do"></iframe>
+            </div>
+        </div>
+        <!--左边菜单结束-->
+
+        <!--右边框架开始-->
+        <div class="right_c" id="right" style="left: 260px;">
+            <div class="nav-tip" id="nav" onclick="javascript:void(0)">&nbsp;</div>
+
+        </div>
+        <div class="Conframe" style="left: 268px;">
+            <iframe name="Conframe" id="Conframe">
+			
+			</iframe>
+        </div>
+        <!--右边框架结束-->
+
+        <!--底部开始-->
+        <div class="bottom_c"></div>
+        <!--底部结束-->
+    </div>
+
+    <script type="text/javascript">
+	var orgid="${current-orgid}"
+		console.log(orgid)
+        function iframe_noCache_url()
+        {
+            // $("#Conframe").attr("src","/common/home/lxny_home.jsp?orgid=${current-orgid}&noCache="+Math.random());
+            // ="/common/home/lxny_home.jsp?orgid=${current-orgid}&noCache="+Math.random();
+        }
+        iframe_noCache_url();
+        var timer = window.setInterval(function(){
+            var data = {orgid:orgid}
+        $.ajax({
+                url:'/AmRes/com.cdms.CheckAlarmAndRemind.do',//检查报警和提醒
+                type:"POST",
+                data:{params:JSON.stringify(data)},
+                dataType:'json',
+                success:function(data){
+                    console.info(data);
+                    //如果有报警
+                    if(data.alarm_value===true){
+                        console.info('正在播放报警声音！');
+                        $("#alarm").get(0).play();
+                    }
+                    //如果有提醒
+                    if(data.remind_value===true){
+                        console.info('正在播放提醒声音！');
+                        $("#remind").get(0).play();
+                    }
+                            
+                }
+        } );
+    },30000);
+    </script>
+	
+<script>
+$(function(){
+
+	$(".exit").mouseenter(function(){
+		$(".member").slideToggle();
+	});
+	$(".member").mouseleave(function(){
+		$(".member").slideToggle();
+	});
+});
+</script>
+</body>
+</html>

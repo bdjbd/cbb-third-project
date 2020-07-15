@@ -1,0 +1,74 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="utf-8"/>  
+<title>地图</title>  
+<script type="text/javascript">  
+function initialize() {
+    
+    var params=location.search.substring(1,location.search.length).split("&"); //获取url参数
+    
+    //起点
+    var lng = params[0].split("=")[1];
+    var lat = params[1].split("=")[1];
+
+
+    var statrpoint = new BMap.Point(lng,lat);//起点
+    
+    var mp = new BMap.Map('map');
+    // 将地址解析结果显示在地图上,并调整地图视野
+    mp.centerAndZoom(statrpoint, 11);//创建地图，已起点为中心
+    
+    var keyword = decodeURIComponent(params[2].split("=")[1]);
+    
+    var myGeo = new BMap.Geocoder();
+    myGeo.getPoint(keyword, function(point){
+        if (point) {
+            //创建地图
+            
+            
+            mp.enableScrollWheelZoom();    //启用滚轮放大缩小，默认禁用
+            mp.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+            mp.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
+            
+//            // 创建标注 
+//            var marker = new BMap.Marker(point);   
+//            mp.addOverlay(marker);                     // 将标注添加到地图中
+            
+            //添加线路--驾车
+            var endpoint = new BMap.Point(point.lng,point.lat);;
+            var driving = new BMap.DrivingRoute(mp, {renderOptions:{map: mp, autoViewport: true}});
+            driving.search(statrpoint, endpoint);
+            
+        }
+    });
+　　
+       
+            
+  
+}  
+   
+function loadScript() {  
+  var script = document.createElement("script");  
+  script.src = "http://api.map.baidu.com/api?v=2.0&ak=VdTiN5vR1IdqAd1NqBdGInmIeBw78XtN&callback=initialize";//此为v2.0版本的引用方式  
+  // http://api.map.baidu.com/api?v=1.4&ak=您的密钥&callback=initialize"; //此为v1.4版本及以前版本的引用方式  
+  document.body.appendChild(script);  
+}  
+window.onload = loadScript;  
+
+
+
+
+</script>  
+</head>  
+<body>  
+  <div id="map"></div>  
+</body>  
+</html>
+<script>
+    var mapheight = parseFloat(window.screen.availHeight)*0.9;
+    var mapweight = window.screen.availWidth;
+    var map = document.getElementById('map');
+    map.style.height = mapheight+"px";
+    map.style.weight = mapweight+"px";
+</script>

@@ -1,0 +1,38 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>${window-title}</title>
+${head}
+<link rel="stylesheet" type="text/css" href="/common/skins/base.css" />
+<link rel="stylesheet" type="text/css" href="${skin}" />
+<script type="text/javascript" src="/common/mootools.js"></script>
+<script type="text/javascript" src="/common/fastunit.js"></script>
+${include-css}
+${include-js-top}
+<link rel="stylesheet" type="text/css" href="/common/slide/frame/slide.css" />
+</head>
+<body ${body-attribute}>
+
+<div id="slide_main">
+<form method="post">
+${heading}
+${subheading}
+${message}
+${unit}
+${debug}
+</form>
+</div>
+
+<div id="slide_arrow">
+	<table cellspacing="0" cellpadding="0">
+	<tr>
+		<td id="slide_separator"></td>
+		<td><img onclick="slideFrame(this)" src="/common/slide/frame/l.png"></td>
+	</tr>
+	</table>
+</div>
+
+</body>
+<script type="text/javascript" src="/common/slide/frame/slide.js"></script>
+${include-js-bottom}
+</html>

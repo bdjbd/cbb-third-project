@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="UNIT">
+  <columns>
+    <column name="uid" type="2"/>
+    <column name="gid" type="2"/>
+    <column name="pid" type="2"/>
+    <column name="c" type="12"/>
+    <column name="y" type="12"/>
+    <column name="o" type="12"/>
+    <column name="au" type="12"/>
+    <column name="dpid" type="2"/>
+    <column name="ar" type="2"/>
+    <column name="ms" type="12"/>
+    <column name="ma" type="12"/>
+    <column name="me" type="12"/>
+    <column name="r" type="12"/>
+    <column name="i1" type="12"/>
+    <column name="ui" type="2"/>
+    <column name="t" type="2"/>
+    <column name="i3" type="12"/>
+    <column name="ais" type="12"/>
+    <column name="x" type="2"/>
+    <column name="dm" type="12"/>
+    <column name="d" type="2"/>
+    <column name="de" type="2"/>
+    <column name="ut" type="2"/>
+    <column name="co" type="12"/>
+    <column name="ta" type="2"/>
+    <column name="ti" type="2"/>
+    <column name="st" type="12"/>
+    <column name="v8" type="2"/>
+    <column name="v9" type="2"/>
+    <column name="ub" type="12"/>
+    <column name="gb" type="12"/>
+    <column name="tb" type="12"/>
+    <column name="cb" type="12"/>
+    <column name="cc" type="2"/>
+    <column name="rc" type="2"/>
+    <column name="v7" type="2"/>
+    <column name="la" type="12"/>
+    <column name="g" type="2"/>
+    <column name="w" type="12"/>
+    <column name="wm" type="12"/>
+    <column name="h" type="12"/>
+    <column name="hm" type="12"/>
+    <column name="li" type="12"/>
+    <column name="lsm" type="12"/>
+    <column name="ls" type="12"/>
+    <column name="ln" type="12"/>
+    <column name="lsh" type="12"/>
+    <column name="lmr" type="12"/>
+    <column name="gco" type="12"/>
+    <column name="lqu" type="2"/>
+    <column name="v6" type="2"/>
+    <column name="lsc" type="2"/>
+    <column name="pl" type="12"/>
+    <column name="pp" type="12"/>
+    <column name="pt" type="2"/>
+    <column name="pi" type="2"/>
+    <column name="pbt" type="2"/>
+    <column name="phe" type="2"/>
+    <column name="pcp" type="2"/>
+    <column name="phjp" type="2"/>
+    <column name="ptjp" type="2"/>
+    <column name="pb" type="2"/>
+    <column name="ph" type="2"/>
+    <column name="psh" type="2"/>
+    <column name="pc" type="2"/>
+    <column name="rs" type="2"/>
+    <column name="re" type="12"/>
+    <column name="rw" type="2"/>
+    <column name="l" type="12"/>
+    <column name="ler" type="2"/>
+    <column name="lc" type="2"/>
+    <column name="lct" type="33"/>
+    <column name="lm" type="2"/>
+    <column name="lmt" type="33"/>
+    <column name="lr" type="2"/>
+    <column name="viu" type="2"/>
+    <column name="vit" type="33"/>
+    <column name="vir" type="2"/>
+    <column name="cm" type="12"/>
+    <column name="v0" type="2"/>
+    <column name="v1" type="2"/>
+    <column name="v2" type="2"/>
+    <column name="v3" type="2"/>
+    <column name="v4" type="2"/>
+    <column name="v5" type="2"/>
+    <column name="v10" type="2"/>
+    <column name="v11" type="2"/>
+    <column name="v12" type="2"/>
+    <column name="v13" type="2"/>
+    <column name="v14" type="2"/>
+    <column name="v15" type="2"/>
+    <column name="v16" type="2"/>
+    <column name="v17" type="2"/>
+    <column name="v18" type="2"/>
+    <column name="v19" type="2"/>
+    <column name="v20" type="2"/>
+    <column name="v21" type="2"/>
+    <column name="v22" type="2"/>
+    <column name="v23" type="2"/>
+    <column name="v24" type="2"/>
+    <column name="v25" type="2"/>
+    <column name="v26" type="2"/>
+    <column name="v27" type="2"/>
+    <column name="v28" type="2"/>
+    <column name="v29" type="2"/>
+    <column name="i0" type="12"/>
+    <column name="i2" type="12"/>
+    <column name="i4" type="12"/>
+    <column name="i5" type="12"/>
+    <column name="i6" type="12"/>
+    <column name="i7" type="12"/>
+    <column name="i8" type="12"/>
+    <column name="i9" type="12"/>
+    <column name="i10" type="12"/>
+    <column name="i11" type="12"/>
+    <column name="i12" type="12"/>
+    <column name="i13" type="12"/>
+    <column name="i14" type="12"/>
+    <column name="i15" type="12"/>
+    <column name="i16" type="12"/>
+    <column name="i17" type="12"/>
+    <column name="i18" type="12"/>
+    <column name="i19" type="12"/>
+  </columns>
+  <rows>
+    <row>
+      <value>user.form</value>
+      <value>admin</value>
+      <value>user</value>
+      <value>1</value>
+      <value>1</value>
+      <value>4</value>
+      <value>1</value>
+      <value>user</value>
+      <value></value>
+      <value>1</value>
+      <value>1</value>
+      <value>1</value>
+      <value>0</value>
+      <value>0</value>
+      <value>com.fastunit.adm.user.UserUI</value>
+      <value>AUSER</value>
+      <value>1</value>
+      <value>0</value>
+      <value></value>
+      <value>1</value>
+      <value></value>
+      <value>select t.* from AUSER t where t.userid='$RS{user.form.userid,app.user.form.userid}'</value>
+      <value></value>
+      <value>4</value>
+      <value></value>
+      <value>$L{app:user.form}</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>0</value>
+      <value>,12%,1;,38%,1;,12%,1;,38%,1;</value>
+      <value></value>
+      <value>1</value>
+      <value>0</value>
+      <value>s,系统属性;i,个人信息;c,联系方式;r,备注;log,日志属性;</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>0</value>
+      <value>1</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>2</value>
+      <value>1</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value></value>
+      <value>0</value>
+      <value>1</value>
+      <value></value>
+      <value></value>
+      <value>$L{app:user.form}</value>
+      <value></value>
+      <value>/domain/app/user/user.css</value>
+      <value>/domain/app/user/user.js</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>1</value>
+      <value></value>
+      <value>1</value>
+      <value>admin</value>
+      <value>jim</value>
+      <value>2006-10-01 00:00:00</value>
+      <value>superadmin</value>
+      <value>2018-05-09 10:37:10</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value></value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>1</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>0</value>
+    </row>
+  </rows>
+</table>

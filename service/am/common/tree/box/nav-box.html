@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>box </title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../skins/base.css" />
+<link rel="stylesheet" type="text/css" href="../skins/windows/style.css" />
+<script type="text/javascript" src="../mootools.js"></script>
+<script type="text/javascript" src="../fastunit.js"></script>
+
+<style type="text/css">
+/** navigation styles **/
+.mgnlNavigationText {
+    color: black;
+    font-size: 11px;
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+}
+#mgnlAdminCentralMenuInnerDiv {
+    width: 100%;
+}
+div.mgnlNavigationBox {
+    margin: 3px;
+    cursor: default;
+}
+div.mgnlNavigationWrapper1 {
+    width: 100%;
+    margin-bottom: 3px;
+}
+table.mgnlNavigation1Active {
+    height: 30px;
+    width: 100%;
+    background-color: #ADCADF;
+    background-image: url(../../.resources/controls/navigation/mgnlNavigationBgActive.gif);
+    background-repeat: repeat-x;
+    cursor: pointer;
+}
+table.mgnlNavigation1Hover {
+    height: 30px;
+    width: 100%;
+    background-color: #C4D9E8;
+    background-image: url(../../.resources/controls/navigation/mgnlNavigationBgHover.gif);
+    background-repeat: repeat-x;
+    cursor: pointer;
+}
+table.mgnlNavigation1Inactive {
+    height: 30px;
+    width: 100%;
+    background-color: #CDE8A6;
+    background-image: url(../../.resources/controls/navigation/mgnlNavigationBgInactive.gif);
+    background-repeat: repeat-x;
+    cursor: pointer;
+}
+table.mgnlNavigation2Active {
+    height: 24px;
+    width: 100%;
+    background-color: #ADCADF;
+    background-image: url(../../.resources/controls/navigation/mgnlNavigationBgActive.gif);
+    background-repeat: repeat-x;
+    cursor: pointer;
+}
+table.mgnlNavigation2Hover {
+    height: 24px;
+    width: 100%;
+    background-color: #C4D9E8;
+    background-image: url(../../.resources/controls/navigation/mgnlNavigationBgHover.gif);
+    background-repeat: repeat-x;
+    cursor: pointer;
+}
+table.mgnlNavigation2Inactive {
+    height: 24px;
+    width: 100%;
+    cursor: pointer;
+}
+img.mgnlNavigation1Arrow { margin: 0 6px 0 2px; vertical-align: middle; }
+td.mgnlNavigation1Cell {
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+    padding-left: 30px;
+}
+td.mgnlNavigation2Cell {
+    background-repeat: no-repeat;
+    background-position: 5px 2px;
+    padding-left: 30px;
+}
+div.mgnlNavigationWrapper2Active {
+    border-bottom: 1px solid #ADCADF;
+    border-right: 1px solid #ADCADF;
+    border-left: 1px solid #ADCADF;
+    width: auto !important;
+    width: 100%;
+}
+div.mgnlNavigationWrapper2Hover {
+    border-bottom: 1px solid #C4D9E8;
+    border-right: 1px solid #C4D9E8;
+    border-left: 1px solid #C4D9E8;
+    width: auto !important;
+    width: 100%;
+}
+div.mgnlNavigationWrapper2Inactive {
+    border-bottom: 1px solid #CDE8A6;
+    border-right: 1px solid #CDE8A6;
+    border-left: 1px solid #CDE8A6;
+    width: auto !important;
+    width: 100%;
+}
+
+.nav-box{padding:3px;border:1px solid #999999;overflow:auto;}
+.nav-box a{display:block;cursor: pointer;border:1px solid red;}
+.nav-box a:hover{background:url(active.gif) repeat-x;}
+.nav-box .active,.inactive{margin-bottom:3px;vertical-align: middle;}
+.nav-box .active div{vertical-align: middle;height:30px;background:url(active.gif) repeat-x;}
+.nav-box .inactive div{vertical-align: middle;height:30px;background:url(inactive.gif) repeat-x;}
+.nav-box .inactive ul{display:none;}
+.nav-box ul{margin-bottom:3px;}
+
+
+
+</style>
+
+</head>
+<body>
+
+
+
+
+<div id="" class="nav-box" style="width:200px;height:200px;">
+
+<div class="inactive">
+<div onclick=""><a herf="ss">AAA</a></div>
+</div>
+
+<div class="active">
+<div class="" onclick=""><a>BBB</a></div>
+<ul>
+<li><a href="/adm/usertype.do?m=e" target="main">用户类别</a></li>
+<li><a href="/adm/degree.do?m=e" target="main">学历设置</a></li>
+</ul>
+</div>
+
+<div class="inactive">
+<div class="" onclick=""><a>CCC</a></div>
+<ul>
+<li><a href="/adm/variables.do" target="main">变量</a></li>
+<li><a href="/adm/orgtype.do?m=e" target="main">机构类别</a></li>
+<li><a href="/adm/usertype.do?m=e" target="main">用户类别</a></li>
+<li><a href="/adm/degree.do?m=e" target="main">学历设置</a></li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>

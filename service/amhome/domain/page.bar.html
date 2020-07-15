@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>${window-title}</title>
+${head}
+<link rel="stylesheet" type="text/css" href="/common/skins/base.css" />
+<link rel="stylesheet" type="text/css" href="${skin}" />
+<script type="text/javascript" src="/common/mootools.js"></script>
+<script type="text/javascript" src="/common/fastunit.js"></script>
+${include-css}
+${include-js-top}
+</head>
+<body scroll="auto" ${body-attribute}>
+<form method="post">
+${app,top}
+<table cellspacing="0"><tr><td style="padding:6px;">
+${heading}
+${subheading}
+${message}
+${unit}
+${debug}
+</td></tr></table>
+</form>
+</body>
+${include-js-bottom}
+</html>

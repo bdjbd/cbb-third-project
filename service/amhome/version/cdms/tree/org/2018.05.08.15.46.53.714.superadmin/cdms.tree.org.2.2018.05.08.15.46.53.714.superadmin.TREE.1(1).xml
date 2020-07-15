@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="TREE">
+  <columns>
+    <column name="tid" type="2"/>
+    <column name="id" type="2"/>
+    <column name="pid" type="2"/>
+    <column name="n" type="2"/>
+    <column name="am" type="12"/>
+    <column name="a" type="2"/>
+    <column name="ata" type="2"/>
+    <column name="ic" type="2"/>
+    <column name="io" type="2"/>
+    <column name="t" type="2"/>
+    <column name="css" type="2"/>
+    <column name="cv" type="2"/>
+    <column name="cc" type="2"/>
+    <column name="c" type="2"/>
+    <column name="fu" type="2"/>
+    <column name="fr" type="12"/>
+    <column name="v" type="12"/>
+    <column name="o" type="12"/>
+    <column name="v1" type="2"/>
+    <column name="v2" type="2"/>
+    <column name="v3" type="2"/>
+    <column name="v4" type="2"/>
+    <column name="v5" type="2"/>
+    <column name="i1" type="12"/>
+    <column name="i2" type="12"/>
+    <column name="i3" type="12"/>
+  </columns>
+  <rows>
+    <row>
+      <value>org</value>
+      <value>root</value>
+      <value></value>
+      <value>root</value>
+      <value>0</value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value></value>
+      <value>0</value>
+      <value>1</value>
+      <value>0</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+      <value>$N%</value>
+    </row>
+  </rows>
+</table>

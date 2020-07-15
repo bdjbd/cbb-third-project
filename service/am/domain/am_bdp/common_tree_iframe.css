@@ -1,0 +1,36 @@
+
+@media only screen and (max-width:1799px) {
+   .myDialog {
+		margin: -35% -45%;
+		width: 90%;
+		height: 80%;
+	}
+
+	.myDialog iframe {
+		width: 100%;
+		height:100%;
+	}
+	.myDialog .content {
+		width: 100%;
+		height:100%;
+	}
+
+}
+
+
+@media only screen and (||max-width:1920px) {
+     .myDialog {
+		margin: -43% -45%;
+		width: 90%;
+		height: 80%;
+	}
+
+	.myDialog iframe {
+		width: 100%;
+		height:100%;
+	}
+	.myDialog .content {
+		width: 100%;
+		height:100%;
+	}
+}

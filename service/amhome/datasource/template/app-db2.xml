@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database name="db2">
+  <driver>
+		<class>com.ibm.db2.jcc.DB2Driver</class>
+		<url>jdbc:db2://localhost/APP</url>
+		<username>db2admin</username>
+		<password>db2</password>
+	</driver>
+</database>

@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>${window-title}</title> ${head}
+<script type="text/javascript" src="/common/mootools.js"></script>
+<script type="text/javascript" src="/common/fastunit.js"></script>
+
+${include-css} ${include-js-top}
+
+<link href="/app/login_v02/css/login.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="/app/login_v02/css/demo.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="/common/moodialog/css/MooDialog_login.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="/common/qmyx/qrcode_model.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/app/login_v02/js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="/app/login_v02/js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="/app/login_v02/js/Validform_v5.3.2_min.js"></script>
+<script type="text/javascript" src="/common/moodialog/dialog.js"></script>
+
+
+<script type="text/javascript">
+//$(document).addEvent('keyup',function(e){
+//	if(e.code==13 && $fnv('login.userid')!='' && $fnv('login.password')!=''){
+//		doSubmit('/app/login/login.do');
+//	}
+//});
+
+$(document).keyup(function(e)
+{
+	//alert("e.code=" + e.which);
+	if(e.which==13 && $fnv('login.userid')!='' && $fnv('login.password')!=''){
+		doSubmit('/app/login/login.do');
+	}
+});
+
+//-->
+</script>
+
+<style>
+.nav_a:hover {
+	text-decoration: none;
+    color: #009bd8;
+} 
+.nav_a:visited {color:#009bd8;} 
+.nav_a:link {color:#009bd8;} 
+.nav_a{color:#009bd8;}
+
+.index_header{
+	height: 84px;
+    margin-top: 26px;
+	margin-bottom: 26px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+</style>
+
+</head>
+
+
+<script>
+
+function checkVersion(){
+	var currentVersion=0;
+	if(getQueryString('version')){
+		currentVersion=getQueryString('version');
+	}
+	
+	var newVersion=0;
+	if((${new_version}+"")||false){
+		newVersion=${new_version}
+	};
+	var downloadUrl='${download_url}';
+	
+	if(downloadUrl){
+		if(newVersion>currentVersion){
+				try{
+					if(Android){
+						Android.updateApp(downloadUrl)
+						}
+				}catch(e){
+				}
+			}
+		}
+	}
+</script>
+
+<body onload="checkVersion()">
+    
+<div style="padding-left:10%;padding-right:10%" class="index_header"><!-- class="header"-->
+<!--  <h1 class="headerLogo">-->
+<!--      <img alt="logo" src="/app/login_v02/images/logo1.png" />-->
+      <table style="width:100%;">
+          <tr>
+              <td  style="vertical-align:middle;padding-left:7px;">
+                   <img alt="logo" src="/app/login_v02/images/title.jpg"/>
+              </td>
+			 <td style="padding-bottom:25px;vertical-align:bottom;font-size:12px;padding-left:10px;color:#009bd8;">
+				  <p style="text-align:right;">
+						<!-- <a class="nav_a" target="_blank" href="/am_bdp/cro_rent_page.do?m=e&autoback=/app/login.do">缴费充值</a>
+						&nbsp;|&nbsp; -->
+						<!--<a class="nav_a" href="#" onclick="open_qrcode_MyDialog('http://vcommuntiy.com/downloadldapp.jsp')">点击下载管理APP</a>-->
+				  </p>
+				  <!-- <a class="nav_a" target="_blank" href="http://www.xacjkj.com">技术支持：惠亿家信息服务合作社</a>
+				  &nbsp;|&nbsp;
+				  <a class="nav_a" href="#" onclick="checkVersion()">V${app_version}</a> -->
+				  
+			 </td>
+          </tr>
+      </table>
+<!--  </h1>-->
+<!-- 	<div class="headerNav">
+		<a target="_blank" href="http://www.grid-elec.com/index.html">格蒂官网</a>
+		<a target="_blank" href="http://www.grid-elec.com/about/">关于格蒂</a>
+	</div> -->
+</div>
+
+<div class="banner">
+
+<div class="login-aside">
+  <div id="o-box-up"></div>
+  <div id="o-box-down"  style="table-layout:fixed;">
+   
+   <div class="fm-item pos-r">
+	   <div class="error-box">${message}</div>
+  </div>
+   
+   <form class="registerform" method="post">
+   ${unit}
+  
+  </form>
+  
+  </div>
+
+</div>
+
+	<div class="bd">
+		<ul>
+			<li style="background:url(/app/login_v02/themes/theme-pic1.png) #CCE1F3 center 0 no-repeat;"><a href="#"></a></li>
+			<li style="background:url(/app/login_v02/themes/theme-pic2.png) #CCE1F3 center 0 no-repeat;"><a href="#"></a></li>
+		</ul>
+	</div>
+
+	<div class="hd"><ul></ul></div>
+</div>
+<script type="text/javascript">jQuery(".banner").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });</script>
+
+
+<div class="banner-shadow"></div>
+
+<div class="footer">
+<div class="ui-form-explain" style="text-align: center;padding: 8px;" ></div>
+   <p>陕西诺维北斗信息科技股份有限公司 版权所有 Copyright 2018-2019 | 陕ICP备10005734号-5</p>
+</div>
+
+
+</body>
+${include-js-bottom}
+<script type="text/javascript" src="/common/qmyx/open_qrcode.js"></script>
+<script>
+function getQueryString(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+	var r = window.location.search.substr(1).match(reg); 
+	if (r != null) return unescape(r[2]); return null; 
+} 
+
+
+	var orgid = getQueryString("orgid");
+	var v = document.getElementById("rechange");
+	v.innerHTML = ' <a class="nav_a"  target="_blank" href="/am_bdp/space_rechange.form.do?m=a&amp;orgid='+orgid+'&amp;autoback=/app/login.do?orgid='+orgid+'${versionquery}" id="rechangeLink">使用充值</a>&nbsp;|&nbsp;';
+
+
+</script>
+
+
+</html>

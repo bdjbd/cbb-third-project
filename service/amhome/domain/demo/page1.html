@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>${window-title}</title>
+${head}
+<link rel="stylesheet" type="text/css" href="/common/skins/base.css" />
+<link rel="stylesheet" type="text/css" href="${skin}" />
+<script type="text/javascript" src="/common/mootools.js"></script>
+<script type="text/javascript" src="/common/fastunit.js"></script>
+${include-css}
+${include-js-top}
+<style type="text/css">
+.ph{text-align:center;padding:4px;font-size:22px;font-weight:bold;color:#03005C; }
+.ps{text-align:center;font-size:18px;font-weight:bold;}		
+.N{BORDER-bottom:0px;font-weight:normal}
+.toolbar{text-align:center;padding:1px;}
+</style>
+</head>
+<body ${body-attribute}>
+${demo,tree.bar}
+<form method="post">
+<table cellpadding="0" cellspacing="0" width="100%">
+<c><tr><td align="center"><br><span class="ph">${heading}</span><span class="ps">${subheading}</span><br></td></tr></c>
+<c><tr><td class="M">${message}</td></tr></c>
+<tr><td>${unit}</td></tr>
+<tr><td><br><HR>Copyright(C) 2007 FastUnit</td></tr>
+<c><tr><td>${debug}</td></tr></c>
+</table>
+</form>
+</body>
+${include-js-bottom}
+</html>

@@ -1,0 +1,30 @@
+.nav-list {float: left; display: inline; /* IE 6 */margin: 0 20px 0 0;width: 100%;background: #e5e57f url(nav.png) 0 0 no-repeat;margin-bottom: 20px;padding-top: 10px;}
+.nav-list .title {padding: 0 0 0 10px;text-align: center;font-size: 1.2em;font-weight: bold;}
+.nav-list .sub-title {padding: 3px 0 4px 10px;font-weight: bold;}
+.nav-list-box {background: url(nav.png) 100% 100% no-repeat;padding-bottom: 10px;}
+.nav-list-box ul {	background: #e5e57f;margin: 0 0 0 2px;}
+.nav-list-box li {height: 1%; /* IE 6 */padding: 0;list-style: none;}
+.nav-list-box li a {display: block;height: 1%;padding: 3px 0 4px 10px;color: #000;font-weight: bold;}
+.nav-list-box li.open a {font-weight: bold;}
+
+/* hover and marked */
+.nav-list-box a:hover,
+.nav-list-box a:active,
+.nav-list-box a:focus,
+.nav-list-box li.on a:hover,
+.nav-list-box li.on a:active,
+.nav-list-box li.on a:focus,
+.nav-list-box li.on a {background: #ec1549;color: #fff;text-decoration: none;}
+
+/* 2nd level */
+.nav-list-box ul ul {margin: 5px 0 5px 10px;border: 1px solid #fff;padding: 0;background: #eeeeac;}
+.nav-list-box li li {font-size: 100%;}
+.nav-list-box li.on li, 
+.nav-list-box li.open li a {font-weight: normal;}
+.nav-list-box li.on li a {background: transparent;color: #000;}
+.nav-list-box li li.on a {color: #fff;font-weight: bold;}
+
+/* 3rd level */
+.nav-list-box ul ul ul {background: #f0f0d9;border-left: 10px solid #eeeeac;margin: 5px 0 5px 10px;border: 1px solid #fff;}
+.nav-list-box li li.open li a {font-weight: normal;}
+.nav-list-box li li li.on a {background: #ec1549;font-weight: bold;}

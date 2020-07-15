@@ -1,0 +1,6 @@
+span{white-space:nowrap;}
+img{margin:1px;vertical-align:middle;}
+
+.lable{color:#000099;}
+.active{color:#000099; text-decoration:underline;cursor:pointer;}
+.over{color:#cc00cc; text-decoration:underline;cursor:pointer;}

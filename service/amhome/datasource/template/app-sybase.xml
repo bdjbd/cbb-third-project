@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database name="sybase">
+  <driver>
+		<class>com.sybase.jdbc2.jdbc.SybDriver</class>
+		<url>jdbc:sybase:Tds:localhost:5000/app</url>
+		<username>sa</username>
+		<password>sa</password>
+	</driver>
+</database>

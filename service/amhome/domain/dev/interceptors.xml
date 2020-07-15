@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<interceptors>
+	<action>
+		<interceptor>com.fastunit.framework.interceptor.ACI</interceptor>
+		<interceptor>com.fastunit.framework.interceptor.TokenAI</interceptor>
+		<interceptor>com.fastunit.framework.interceptor.UserLogInterceptor</interceptor>
+		<interceptor>com.fastunit.dev.interceptor.DevValidationAI</interceptor>
+		<interceptor>com.fastunit.framework.interceptor.LoadTablesAI</interceptor>
+	</action> 
+	<page>
+		<interceptor>com.fastunit.framework.interceptor.ACI</interceptor>
+		<interceptor>com.fastunit.framework.interceptor.UserLogInterceptor</interceptor>
+	</page> 
+	<unit>
+		<interceptor>com.fastunit.framework.interceptor.ACI</interceptor>
+	</unit> 
+</interceptors>
