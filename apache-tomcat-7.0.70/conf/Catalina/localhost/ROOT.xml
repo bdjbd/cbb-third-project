@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path=""  docBase="D:\cdms_servers\service\am" privileged="true" reloadable="true">
+<Resource name="dstest" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="-1"
+               username="postgres" password="postgres" driverClassName="org.postgresql.Driver"
+               url="jdbc:postgresql://114.115.161.200:5432/cdms_business"/>
+</Context>
