@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条形码打印</title>
+    <style type="text/css">
+        ody {
+            background: #ededed;
+            width: 900px;
+            margin: 30px auto;
+            color: #999;
+        }
+
+        #barcodeContent{
+            width: 100%;
+            height: 100%;
+        }
+        .white {
+            color: #606060;
+            border: solid 1px #b7b7b7;
+            background: #fff;
+            background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+            background: -moz-linear-gradient(top,  #fff,  #ededed);
+            filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+        }
+        .button {
+            display: inline-block;
+            zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+            *display: inline;
+            vertical-align: baseline;
+            margin: 0 2px;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font: 14px/100% Arial, Helvetica, sans-serif;
+            padding: .5em 2em .55em;
+            text-shadow: 0 1px 1px rgba(0,0,0,.3);
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+            box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        }
+        .small {
+            font-size: 11px;
+            padding: .2em 1em .275em;
+        }
+    </style>
+
+</head>
+
+<body>
+<button class="button white small" type="button" id="prints" value="打印" onclick="prints()">打 印</button>
+    <div id="barcodeContent">
+            <table id="barcodeTable" align="center">
+            </table>
+    </div>
+<script type="text/javascript">
+    var params=location.search.substring(1,location.search.length).split("&");
+    //条形码图片地址
+    var imgsPath=params[0].split("=")[1];
+    //图片打印数量
+    var printNumber=params[1].split("=")[1];
+    var div = document.getElementById("barcodeTable");
+    //循环输出图片
+    var content = "";
+    for(var i=1;i<=printNumber;i++){
+        content =  content + "<img src='"+imgsPath+"'>";
+        //每行两个
+        if( i!=1 && i%2 == 0){
+          content = content + "</br>";
+        }
+    }
+    div.innerHTML = content;
+
+    //打印当前页面
+    function prints(){
+        document.getElementById("prints").style.display = 'none';
+        window.print();
+        document.getElementById("prints").style.display = '';
+    }
+</script>
+</body>
+</html>
